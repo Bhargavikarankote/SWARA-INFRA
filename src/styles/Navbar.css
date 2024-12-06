@@ -1,0 +1,134 @@
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  padding: 10px 10px;
+  
+}
+
+.navbar-logo {
+  width: 50px; 
+  height: auto;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+} */
+ /* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 200px;
+    text-align: right;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: black;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

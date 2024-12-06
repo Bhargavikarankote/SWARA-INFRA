@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box; /* Consistent box sizing */
+}
+
+.construction-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align sections to the top */
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.why-choose-us {
+  flex: 1; /* Takes up one part of the space */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.why-choose-us h2 {
+  color: #ffa500;
+  font-size: 28px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.why-choose-us h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ffa500;
+  margin-top: 5px;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-header.active {
+  background-color: #ffa500;
+  color: white;
+}
+
+.dropdown-header:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 20px 20px;  /* Increased padding for bigger size */
+  font-size: 18px; /* Larger text */
+  transition: background-color 0.3s ease;
+  height: auto;  /* Allow it to grow based on content */
+  min-height: 50px; 
+  width: 100%;  /* Ensure it takes up full width of its container */
+  box-sizing: border-box; /* Ensure padding is accounted for */
+}
+
+
+.dropdown-content.active {
+  display: block;
+}
+
+.about-us {
+  flex: 1; /* Takes up equal space */
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.about-us h2 {
+  color: #ffa500;
+  font-size: 28px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-us h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ffa500;
+  margin: 5px auto;
+}
+
+.image-gallery {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.thumbnail-gallery img {
+  width: 120px;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sections-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-us h2, .why-choose-us h2 {
+    text-align: center;
+  }
+}

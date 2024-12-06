@@ -1,0 +1,141 @@
+/* General About Us Styles */
+.about-us {
+    padding: 10px 5px;
+  }
+  
+  .about-header {
+    text-align: center;
+    /* margin-bottom: 10px; */
+  }
+  
+  .about-header h1 {
+    font-size: 2.5em;
+    /* color: #333; */
+    color: white;
+  }
+  
+  .about-header p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Swiper Carousel */
+  .about-carousel {
+    padding: 20px 0;
+  }
+  
+  .carousel-content {
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Fixed height for uniformity */
+    max-width: 250px; /* Fixed width for compact design */
+    margin: auto; /* Center content in Swiper */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .carousel-content:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  
+  /* Carousel Icon */
+  .carousel-icon {
+    width: 60px; /* Smaller icon size */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover Effect for Icon */
+  .carousel-content:hover .carousel-icon {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .carousel-content h3 {
+    font-size: 1.3em; /* Slightly smaller font for compact design */
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .carousel-content p,
+  .carousel-content ul {
+    font-size: 0.9em; /* Smaller text */
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .carousel-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .carousel-content ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Adjust Space Between Slides */
+  .swiper-slide {
+    margin-left: -5px; /* Adjust this for spacing between slides */
+  }
+  
+  /* Swiper Navigation Arrows */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #333;
+  }
+  
+  /* Responsive Swiper */
+  @media (max-width: 768px) {
+    .about-carousel {
+      padding: 20px;
+    }
+  
+    .carousel-content {
+      height: auto; /* Allow height adjustment on smaller screens */
+      max-width: 100%; /* Expand width to full screen on small devices */
+    }
+  
+    .carousel-content h3 {
+      font-size: 1.1em;
+    }
+  
+    .carousel-content p,
+    .carousel-content ul {
+      font-size: 0.8em;
+    }
+  }
+  
+  .about-header {
+    position: relative;
+    background: url('https://wallup.net/wp-content/uploads/2019/09/455817-construction-work-building-job-profession-architecture-design.jpg') 
+      no-repeat center center;
+      
+    background-size: cover;
+    padding: 150px 90px;
+  
+    border-radius: 5px;
+  }
+  
+  
+  
+  /* .about-header {
+    text-align: center;
+    background: url("https://themes247.net/html5/construction-template/demo/assets/img/bg-section-4.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+  } */
+  
+  @media (max-width: 768px) {
+    .about-header {
+      background-size: 120%; /* Smaller background size for mobile */
+      padding: 100px 30px; /* Adjust padding for smaller screens */
+    }
+  }

@@ -1,0 +1,42 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7c400;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.928em;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Adds space between the icons */
+  }
+  
+  .social-icons img {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+  }
+  
+  
+  .contact-info {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .logo-image {
+    height: 40px; /* Adjust size */
+    width: auto;
+  }
+  
