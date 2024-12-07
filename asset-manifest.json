@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/sSWARA-INFRA/static/css/main.1c37da6b.css",
-    "main.js": "/sSWARA-INFRA/static/js/main.be81854f.js",
-    "static/js/453.0aefb1aa.chunk.js": "/sSWARA-INFRA/static/js/453.0aefb1aa.chunk.js",
-    "static/media/featuring.jpeg": "/sSWARA-INFRA/static/media/featuring.e534c4632eee1b287796.jpeg",
-    "static/media/mission.jpeg": "/sSWARA-INFRA/static/media/mission.87b6083ff3199f2ff435.jpeg",
-    "static/media/vision.jpeg": "/sSWARA-INFRA/static/media/vision.02ea449980cd367b9901.jpeg",
-    "static/media/bootstrap-icons.woff?": "/sSWARA-INFRA/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/sSWARA-INFRA/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/slick.svg": "/sSWARA-INFRA/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/sSWARA-INFRA/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/sSWARA-INFRA/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/sSWARA-INFRA/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/sSWARA-INFRA/index.html",
-    "main.1c37da6b.css.map": "/sSWARA-INFRA/static/css/main.1c37da6b.css.map",
-    "main.be81854f.js.map": "/sSWARA-INFRA/static/js/main.be81854f.js.map",
-    "453.0aefb1aa.chunk.js.map": "/sSWARA-INFRA/static/js/453.0aefb1aa.chunk.js.map"
+    "main.css": "/SWARA-INFRA/static/css/main.322bc383.css",
+    "main.js": "/SWARA-INFRA/static/js/main.3b1e4f2a.js",
+    "static/js/453.0aefb1aa.chunk.js": "/SWARA-INFRA/static/js/453.0aefb1aa.chunk.js",
+    "static/media/featuring.jpeg": "/SWARA-INFRA/static/media/featuring.e534c4632eee1b287796.jpeg",
+    "static/media/mission.jpeg": "/SWARA-INFRA/static/media/mission.87b6083ff3199f2ff435.jpeg",
+    "static/media/vision.jpeg": "/SWARA-INFRA/static/media/vision.02ea449980cd367b9901.jpeg",
+    "static/media/bootstrap-icons.woff?": "/SWARA-INFRA/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/SWARA-INFRA/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/slick.svg": "/SWARA-INFRA/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/SWARA-INFRA/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/SWARA-INFRA/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/SWARA-INFRA/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/SWARA-INFRA/index.html",
+    "main.322bc383.css.map": "/SWARA-INFRA/static/css/main.322bc383.css.map",
+    "main.3b1e4f2a.js.map": "/SWARA-INFRA/static/js/main.3b1e4f2a.js.map",
+    "453.0aefb1aa.chunk.js.map": "/SWARA-INFRA/static/js/453.0aefb1aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c37da6b.css",
-    "static/js/main.be81854f.js"
+    "static/css/main.322bc383.css",
+    "static/js/main.3b1e4f2a.js"
   ]
 }
