@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "../styles/Projects.css"; // Include any necessary styling
+import "../styles/Projects.css"; 
 
 const Projects = () => {
-  // State to track the current tab ("completed" or "ongoing")
+ 
   const [activeTab, setActiveTab] = useState("completed");
 
-  // Sample data for completed and ongoing projects
+
   const completedProjects = [
     { location: "New York", sqft: "2000 sqft" },
     { location: "Los Angeles", sqft: "2500 sqft" },
@@ -24,8 +24,8 @@ const Projects = () => {
     <div className="projects-container">
       <h2>VIEW CONSTRUCTION</h2>
       <p>
-        (To discover the perfect plan for your needs, visit our detailed{" "}
-        <a href="/package">package page...</a>)
+        {/* (To discover the perfect plan for your needs, visit our detailed{" "}
+        <a href="/package">package page...</a>) */}
       </p>
       <h3>Delivering the high-quality construction services...</h3>
 

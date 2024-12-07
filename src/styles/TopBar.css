@@ -1,42 +1,92 @@
+/* Top Bar General Styling */
 .top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f7c400;
-    color: white;
-    padding: 10px 20px;
-    font-size: 0.928em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7c400;
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.928em;
+}
+
+/* Social Icons Section */
+.social-links {
+  display: flex;
+  gap: 10px; /* Adds space between the icons */
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6em; /* Increased icon size */
+  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth scaling effect */
+}
+
+.social-links a:hover {
+  color: #333; /* Dark hover effect */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Contact Info Section */
+.contact-info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Logo Section (Optional if you add a logo) */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo-image {
+  height: 40px; /* Adjust size */
+  width: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    gap: 15px;
   }
-  
-  .social-icons {
-    display: flex;
-    gap: 10px; /* Adds space between the icons */
+
+  .social-links {
+    justify-content: center; /* Center social icons */
+    margin-bottom: 10px; /* Add space below social icons */
   }
-  
-  .social-icons img {
-    width: 30px; /* Adjust icon size */
-    height: 30px; /* Adjust icon size */
-  }
-  
-  
+
   .contact-info {
-    display: flex;
-    gap: 20px;
+    flex-direction: column; /* Stack contact info vertically */
+    gap: 10px; /* Adjust spacing between items */
   }
-  
+
+  .social-links a {
+    font-size: 10em; /* Slightly increase icon size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 10px; /* Reduce padding for very small screens */
+    font-size: 0.8em; /* Slightly reduce font size */
+  }
+
+  .social-links a {
+    font-size: 10em; /* Further increase icon size for small screens */
+  }
+
   .contact-info span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    flex-direction: column; /* Stack icons and text for contact info */
+    text-align: center;
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .logo-image {
-    height: 40px; /* Adjust size */
-    width: auto;
-  }
-  
+}
