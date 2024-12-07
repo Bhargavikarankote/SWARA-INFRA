@@ -19,7 +19,7 @@ import Premium from './components/Premium';
 const App = () => {
   return (
         
-    <Router basename="/SwaraInfra">
+    <Router >{/*basename="/SwaraInfra">  */}
       <div>
         <TopBar/>
       <Navbar/>
