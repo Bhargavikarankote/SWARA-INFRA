@@ -1,18 +1,21 @@
 /* General Section Styling */
 .about-us-section {
-  background-color: #f8f9fa; /* Light gray background */
+  background-color: #f8f9fa; 
   padding: 3rem 0;
+  
 }
 
 .about-us-section h2,
 .about-us-section h3 {
   font-weight: bold;
-  color: #333;
+  /* color: #333; */ /* Remove unnecessary commented code */
+  color: black; /* Ensuring titles are white */
 }
 
 .about-us-section p {
-  color: #555;
-  line-height: 1.6;
+  /* color: #555; */ /* Commented or removed conflicting color */
+  color: white; /* Paragraph text set to white */
+  line-height: 1.6; /* Keeping readability */
 }
 
 /* Images */
@@ -31,10 +34,12 @@
 /* Card Titles */
 .about-us-section h3 {
   font-size: 1.8rem;
+  color: black; /* Ensuring card titles are white */
 }
 
 .about-us-section p {
   font-size: 1rem;
+  color: white; /* Ensure all paragraph text is white */
 }
 
 /* Responsive Adjustments */
@@ -46,6 +51,7 @@
   .about-us-section p {
     font-size: 1rem;
     text-align: center;
+    color: white; /* Ensure text remains white on smaller screens */
   }
 }
 

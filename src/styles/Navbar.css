@@ -1,46 +1,4 @@
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;
-}
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
-  padding: 10px 10px;
-  
-}
-
-.navbar-logo {
-  width: 50px; 
-  height: auto;
-}
-
-.logo-text {
-  font-size: 24px;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  color: black;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  color: black;
-  font-weight: bold;
-} */
  /* General Navbar Styles */
 .navbar {
   display: flex;
@@ -132,3 +90,5 @@
     display: flex;
   }
 }
+
+

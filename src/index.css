@@ -1,7 +1,22 @@
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+} */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+   background-image: url('https://files.oaiusercontent.com/file-TNBUH3qEd9P1mtki6AS7oU?se=2024-12-08T11%3A25%3A11Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Ddf60fd3e-7bc1-4364-992f-870b80f48fcd.webp&sig=Mpa6euti9wNmOi2j3d%2B7Lnj54hVHO4ydH0l9BXkvPkU%3D');  
+  /* background-image: url('https://themes247.net/html5/construction-template/demo/assets/img/bg-section-1.jpg'); */
+  /* background-image: url('https://files.oaiusercontent.com/file-74TkPn8knTuSZtrdxuLPey?se=2024-12-08T11%3A32%3A10Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Defcb5a8c-b124-4bcc-a3ad-718cc26222d9.webp&sig=isPzMQ6fb2zEZ9nkFvY2cwk%2BQ6RwoZqa1PfAKUHxozw%3D'); */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Avoid tiling */
+  background-attachment: fixed; /* Fixed background effect */
+  color: #333; /* Adjust text color for contrast */
 }
+
 
 .navbar {
   display: flex;
