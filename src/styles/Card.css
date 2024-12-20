@@ -1,69 +1,64 @@
-/* General Section Styling */
 .about-us-section {
-  background-color: #f8f9fa; 
-  padding: 3rem 0;
-  
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 20px 0;
 }
 
-.about-us-section h2,
-.about-us-section h3 {
+.about-us-section h2 {
   font-weight: bold;
-  /* color: #333; */ /* Remove unnecessary commented code */
-  color: black; /* Ensuring titles are white */
+  color: #4B0082;
 }
 
 .about-us-section p {
-  /* color: #555; */ /* Commented or removed conflicting color */
-  color: white; /* Paragraph text set to white */
-  line-height: 1.6; /* Keeping readability */
+  color: #555;
+  line-height: 1.6;
 }
 
-/* Images */
-.img-fluid {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-  height: 300px;
-  width: 500px;
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  background-color: #ffffff; /* Default card background */
 }
 
-.img-fluid.hover-card-image:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Emphasized shadow on hover */
+/* Hover effect for cards */
+.card:hover {
+  /* background-color:#e6b903; */
+   /* Blue background on hover */
+  transform: translateY(-8px); /* Slight lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
 }
 
-/* Card Titles */
-.about-us-section h3 {
-  font-size: 1.8rem;
-  color: black; /* Ensuring card titles are white */
+.card:hover h3,
+.card:hover p {
+  color: black; /* Text turns white on hover */
 }
 
-.about-us-section p {
+.card:hover h3 {
+  color:#4B0082; /* Text turns white on hover */
+}
+
+/* Image Styles */
+.fixed-image {
+  width: 400px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px; /* Match card border radius */
+}
+
+/* Card Content Heading */
+.card h3 {
+  color: #4B0082;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+/* Card Content Paragraph */
+.card p {
+  color: #555;
   font-size: 1rem;
-  color: white; /* Ensure all paragraph text is white */
+  transition: color 0.3s ease; /* Smooth text color transition */
 }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .about-us-section h3 {
-    font-size: 1.5rem;
-  }
-
-  .about-us-section p {
-    font-size: 1rem;
-    text-align: center;
-    color: white; /* Ensure text remains white on smaller screens */
-  }
-}
-
-/* Scroll Reveal Animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px); /* Slightly move the element down */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth fade and slide effect */
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0); /* Reset position */
-}
-
