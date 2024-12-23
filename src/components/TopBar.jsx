@@ -20,8 +20,6 @@ const TopBar = () => {
           <a href="#" aria-label="YouTube">
             <i className="fab fa-youtube"></i>
           </a>
-          </div>
-        <div className="contact-info">
           <span>📞 +1 718-999-3939</span>
           <span>✉️ contact@construction.com</span>
           <span>⏰ Mon-Fri: 7:00 - 7:00</span>
