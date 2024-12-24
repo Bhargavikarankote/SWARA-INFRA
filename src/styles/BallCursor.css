@@ -1,13 +1,12 @@
-/* components/BallCursor/BallCursor.css */
 .custom-cursor {
-    position: fixed;
-    width: 20px; /* Size of the ball */
-    height: 20px;
-    background-color: #ff4500; /* Ball color (orange) */
-    border-radius: 50%; /* Make it circular */
-    pointer-events: none; /* Prevent interfering with clicks */
-    transform: translate(-50%, -50%); /* Center the cursor at the mouse point */
-    z-index: 9999; /* Ensure it stays above other elements */
-    transition: transform 0.1s ease-out; /* Add a smooth effect */
-  }
-  
+  position: fixed;
+  width: 20px; /* Size of the ball */
+  height: 20px;
+  border: 2px solid #ff4500; /* Outline color (orange) */
+  border-radius: 50%; /* Make it circular */
+  pointer-events: none; /* Prevent interfering with clicks */
+  transform: translate(-50%, -50%); /* Center the cursor at the mouse point */
+  z-index: 9999; /* Ensure it stays above other elements */
+  transition: transform 0.1s ease-out; /* Add a smooth effect */
+  background-color: transparent; /* No fill */
+}

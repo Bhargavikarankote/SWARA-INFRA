@@ -1,11 +1,36 @@
-/* Hero section */
-.hero-section {
+/* Hero container */
+.hero-container {
   position: relative;
   width: 100%;
   height: 90vh;
-  z-index: 1; /* Ensure the hero section stays on top */
+  z-index: 1;
 }
 
+/* Social Media Links */
+.hero-social-links {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 11;
+}
+
+.hero-social-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem; /* Icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-social-link:hover {
+  color: #ffcc00; /* Highlight color */
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Carousel Styles */
 .carousel {
   height: 100%;
 }
@@ -19,32 +44,32 @@
   text-align: center;
   align-items: center;
 }
-/* Carousel items */
+
 .carousel-item img {
   object-fit: cover;
   width: 100%;
   height: 90vh;
   filter: brightness(90%);
-  z-index: -1; /* Ensure the image stays behind other content */
+  z-index: -1;
 }
 
 .carousel-caption {
   position: absolute;
-  bottom: 50%;
+  bottom: 30%;
   left: 50%;
-  transform: translateX(-50%,-50%);
+  transform: translateX(5%) translateY(-100%);
   text-align: center;
   color: white;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
-  z-index: 10; /* Ensure captions are on top */
-  transform-origin: 50% 50% 0px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  z-index: 10;
   line-height: 40px;
 }
 
 .carousel-caption h5 {
-  font-size: 3rem; /* Large font size for the main title */
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 15px;
+  text-align:center ;
 }
 
 .carousel-caption p {
@@ -57,7 +82,7 @@
 
 /* Button Styles */
 .carousel-caption .btn {
-  background-color: #ffc107; /* Yellow button background */
+  background-color: #ffc107;
   color: black;
   font-size: 1rem;
   font-weight: bold;
@@ -69,7 +94,7 @@
 }
 
 .carousel-caption .btn:hover {
-  background-color: #e6a600; /* Darker yellow on hover */
+  background-color: #e6a600;
   color: white;
 }
 
@@ -78,10 +103,10 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.7);
   border: none;
 }
 
 .carousel-indicators .active {
-  background-color: #ffc107; /* Highlight active indicator */
+  background-color: #ffc107;
 }
