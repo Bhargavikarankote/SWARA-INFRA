@@ -13,7 +13,7 @@ const TopBar = () => {
           
           </div>
         <div className="contact-info">
-        {/* <a href="#" aria-label="Instagram">
+        <a href="#" aria-label="Instagram">
             <i className="fab fa-instagram"></i>
           </a>
           <a href="#" aria-label="Facebook">
@@ -27,7 +27,7 @@ const TopBar = () => {
           </a>
           <a href="#" aria-label="YouTube">
             <i className="fab fa-youtube"></i>
-          </a> */}
+          </a>
           
           <span>📞 +1 718-999-3939</span>
           <span>✉️ contact@construction.com</span>

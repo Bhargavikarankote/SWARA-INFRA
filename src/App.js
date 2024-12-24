@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Premium from './components/Premium';
 import Login from './components/Login'; // Import Login component
+import BallCursor from "./components/BallCursor";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <Router>
       <div>
+      <BallCursor />
         <TopBar />
         <Navbar />
         <Routes>
