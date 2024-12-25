@@ -6,25 +6,25 @@ const data = [
     image: "https://previews.123rf.com/images/kadmy/kadmy1506/kadmy150600519/41576316-construction-worker-mason-bricklayer-installing-red-brick-with-trowel-putty-knife-outdoors.jpg",
     title: "More Than Bricks and Mortar:",
     description:
-      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.",
+      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
   },
   {
     image: "https://www.shutterstock.com/image-photo/structural-engineer-architect-foreman-worker-600nw-2462684023.jpg",
     title: "Comfort and Safety:",
     description:
-      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.",
+      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
   },
   {
     image: "https://india.materialimmaterial.com/cdn/shop/products/07_5cde1e70-e2cb-4dd7-839c-3e70ab74faf2_1445x.jpg?v=1668784470",
     title: "Memories and Nostalgia:",
     description:
-      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.",
+      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
   },
   {
     image: "https://img.freepik.com/free-photo/inspectors-with-sketch_1098-15451.jpg?semt=ais_hybrid",
     title: "Personalization and Expression:",
     description:
-      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.",
+      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
   },
 ];
 

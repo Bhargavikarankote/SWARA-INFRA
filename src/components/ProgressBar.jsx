@@ -7,9 +7,9 @@ function ProgressBar({ progress }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCurrentProgress(progress); // Set the actual progress after the component is rendered
-    }, 300);
+    }, 300); // Delay for smooth animation (optional)
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer); // Clean up the timer
   }, [progress]);
 
   return (
@@ -18,10 +18,6 @@ function ProgressBar({ progress }) {
         className="progress"
         style={{ width: `${currentProgress}% `}}
       ></div>
-      {/* Display the progress percentage text */}
-      <div className="progress-text">
-        {`${currentProgress}%`}
-      </div>
     </div>
   );
 }

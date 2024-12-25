@@ -1,5 +1,6 @@
+/* Base Styles */
 * {
-  box-sizing: border-box; /* Consistent box sizing */
+  box-sizing: border-box;
 }
 
 .construction-container {
@@ -11,20 +12,21 @@
 .sections-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Align sections to the top */
+  align-items: flex-start;
   gap: 30px;
   margin-top: 30px;
-  flex-wrap: wrap; /* Ensure responsiveness */
+  flex-wrap: wrap;
 }
 
 .why-choose-us {
-  flex: 1; /* Takes up one part of the space */
+  flex: 1;
   padding: 20px;
   box-sizing: border-box;
+  text-align: left;
 }
 
 .why-choose-us h2 {
-  color: #ffa500;
+  color: #4B0082;
   font-size: 28px;
   margin-bottom: 20px;
   position: relative;
@@ -35,7 +37,7 @@
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #ffa500;
+  background-color: #4B0082;
   margin-top: 5px;
 }
 
@@ -44,52 +46,32 @@
   background-color: #f4f4f4;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 5px;
-  margin-bottom: 5px;
-  position: relative;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-header.active {
-  background-color: #ffa500;
-  color: white;
-}
-
-.dropdown-header:hover {
-  background-color: #ffa500;
-  color: white;
-}
-
-.dropdown-header {
-  cursor: pointer;
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   margin: 5px 0;
-  padding: 20px 20px;  /* Increased padding for bigger size */
-  font-size: 18px; /* Larger text */
+  padding: 15px 10px;
+  font-size: 16px;
   transition: background-color 0.3s ease;
-  height: auto;  /* Allow it to grow based on content */
-  min-height: 50px; 
-  width: 100%;  /* Ensure it takes up full width of its container */
-  box-sizing: border-box; /* Ensure padding is accounted for */
+  text-align: left;
 }
 
+.dropdown-header.active,
+.dropdown-header:hover {
+  background-color: #ffc500;
+  color: white;
+}
 
 .dropdown-content.active {
   display: block;
 }
 
 .about-us {
-  flex: 1; /* Takes up equal space */
+  flex: 1;
   padding: 30px;
   box-sizing: border-box;
   text-align: center;
 }
 
 .about-us h2 {
-  color: #ffa500;
+  color: #ffc500;
   font-size: 28px;
   margin-bottom: 20px;
   position: relative;
@@ -100,7 +82,7 @@
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #ffa500;
+  background-color: #ffc500;
   margin: 5px auto;
 }
 
@@ -109,10 +91,12 @@
 }
 
 .main-image {
-  width: 100%;
-  height: 300px;
+  width: 100%; /* Makes it responsive to container width */
+  max-width: 600px; /* Caps the width for larger screens */
+  max-height: 300px;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: cover; /* Ensures proper scaling */
+  margin: 0 auto; /* Centers the image within its container */
 }
 
 .thumbnail-gallery {
@@ -123,7 +107,7 @@
 }
 
 .thumbnail-gallery img {
-  width: 120px;
+  width: 140px;
   height: 80px;
   border-radius: 5px;
   cursor: pointer;
@@ -135,13 +119,108 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .sections-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
-
-  .about-us h2, .why-choose-us h2 {
+  .about-us h2,
+  .why-choose-us h2 {
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .sections-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .why-choose-us {
+    padding: 15px;
+    text-align: center;
+  }
+  .why-choose-us h2 {
+    font-size: 24px;
+  }
+  .dropdown-header {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .main-image {
+    max-width: 500px; /* Adjusts for tablet-sized screens */
+    max-height: 250px;
+  }
+  .thumbnail-gallery img {
+    width: 118px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 425px) {
+  .why-choose-us,
+  .about-us {
+    padding: 15px;
+  }
+  .why-choose-us h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .dropdown-header {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .main-image {
+    max-width: 350px; 
+    max-height: 200px;
+  }
+  .thumbnail-gallery img {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .why-choose-us,
+  .about-us {
+    padding: 10px;
+  }
+  .why-choose-us h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .dropdown-header {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .main-image {
+    max-width: 300px; /* Reduces further for very small screens */
+    max-height: 180px;
+  }
+  .thumbnail-gallery img {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .why-choose-us,
+  .about-us {
+    padding: 5px;
+  }
+  .why-choose-us h2,
+  .about-us h2 {
+    font-size: 18px;
+  }
+  .dropdown-header {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .main-image {
+    max-width: 280px; /* Caps for the smallest screen sizes */
+    max-height: 140px;
+  }
+  .thumbnail-gallery img {
+    width: 60px;
+    height: 40px;
   }
 }

@@ -1,77 +1,85 @@
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
+import PremiumPage from "./Premium";
+import Premiumplus from "./Premium+";
+import Luxury from "./Luxury";
+import Luxuryplus from "./Luxury+";
+import FreedomPage from "./Freedom";
+import FreedomPlus from "./Freedom+";
+import TheOne from "./TheOne";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/PricingCarouselWithSlider.css";
 
 const PricingCarouselWithSlider = () => {
-  const [priceRange, setPriceRange] = useState(2170); // Initial price matches the first card
-  const sliderRef = useRef(null); // Ref to control the carousel
+  const [activeCard, setActiveCard] = useState(null);
+  const [animationKey, setAnimationKey] = useState(0);
+  const [priceRange, setPriceRange] = useState(2170);
+  const sliderRef = useRef(null);
+  const activeCardRef = useRef(null); // Ref for the active card container
 
-  // Plans with unique links
   const plans = [
     {
       title: "Premium",
       price: 2170,
-      link: "/premium", // Corrected link
       buttonText: "Explore Premium",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
+      component: <PremiumPage />,
     },
     {
       title: "Premium+",
       price: 2399,
-      link: "/packages/premiumplus", // Corrected link
       buttonText: "Upgrade to Premium+",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
+      component: <Premiumplus />,
     },
     {
       title: "Luxury",
       price: 2620,
-      link: "/packages/luxury", // Corrected link
       buttonText: "Discover Luxury",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
+      component: <Luxury />,
     },
     {
-      title: "Luxury+",
+      title: "LuxuryPlus",
       price: 2799,
-      link: "/packages/luxuryplus", // Corrected link
       buttonText: "Explore Luxury+",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
+      component: <Luxuryplus />,
     },
     {
       title: "Freedom",
       price: 2499,
-      link: "/packages/freedom", // Corrected link
       buttonText: "Start with Freedom",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
+      component: <FreedomPage />,
     },
     {
-      title: "Freedom+",
+      title: "Freedomplus",
       price: 2650,
-      link: "/packages/freedomplus", // Corrected link
       buttonText: "Upgrade to Freedom+",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
+      component: <FreedomPlus />,
     },
     {
-      title: "The One+",
+      title: "TheOneplus",
       price: 3399,
-      link: "/packages/theoneplus", // Corrected link
       buttonText: "Experience The One+",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
+      component: <TheOne />,
     },
   ];
 
-  // Slick Slider settings
   const settings = {
     centerMode: true,
     centerPadding: "60px",
     slidesToShow: 3,
-    focusOnSelect: true,
     infinite: true,
     autoplay: false,
-    arrows: true,
-    afterChange: (index) => setPriceRange(plans[index].price), // Update selected price
+    afterChange: () => {
+      setActiveCard(null);
+      setAnimationKey((prevKey) => prevKey + 1);
+    },
     responsive: [
       {
         breakpoint: 768,
@@ -82,50 +90,65 @@ const PricingCarouselWithSlider = () => {
     ],
   };
 
-  // Handle slider value change and navigate to the closest card
+  const handleCardClick = (plan) => {
+    if (activeCard === plan) return;
+    setActiveCard(plan);
+    setAnimationKey((prevKey) => prevKey + 1);
+
+    // Scroll to the active card details
+    setTimeout(() => {
+      activeCardRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 200); // Delay to ensure the component renders before scrolling
+  };
+
   const handleSliderChange = (value) => {
     setPriceRange(value);
     const targetIndex = plans.findIndex((plan) => plan.price === value);
     if (targetIndex !== -1 && sliderRef.current) {
       sliderRef.current.slickGoTo(targetIndex);
+      setActiveCard(plans[targetIndex]);
     }
   };
 
   return (
     <div className="carousel-container">
       <h2 className="carousel-header">Building Packages</h2>
-      <p className="carousel-subtext">Adjust the slider to focus on a specific package based on price!</p>
-
-      {/* Custom Price Slider */}
+      <p className="carousel-subtext">Click on a card to display more details!</p>
       <div className="price-slider">
         <input
           type="range"
           min="0"
-          max={plans.length - 1} // Set the range based on the number of plans
+          max={plans.length - 1}
           value={plans.findIndex((plan) => plan.price === priceRange)}
           onChange={(e) => handleSliderChange(plans[Number(e.target.value)].price)}
           className="slider"
         />
       </div>
 
-      {/* Carousel */}
-      <Slider ref={sliderRef} {...settings}>
+      {/* Main Slider */}
+      <Slider {...settings} ref={sliderRef}>
         {plans.map((plan, index) => (
-          <div key={index} className="pricing-card">
+          <div key={index} className="pricing-card" onClick={() => handleCardClick(plan)}>
             <h3>{plan.title}</h3>
             <p className="price">Price: Rs {plan.price}</p>
             <ul>
-              {plan.features.map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
+              {plan.features && plan.features.length > 0 ? (
+                plan.features.map((feature, i) => <li key={i}>{feature}</li>)
+              ) : (
+                <li>No features available</li>
+              )}
             </ul>
-            {/* Dynamic Link and Button */}
-            <Link to={plan.link}>
-              <button className="buy-btn">{plan.buttonText}</button>
-            </Link>
+            <button className="buy-btn">{plan.buttonText}</button>
           </div>
         ))}
       </Slider>
+
+      {/* Display Active Card Details */}
+      {activeCard && (
+        <div ref={activeCardRef} key={animationKey} className="active-card animated-card">
+          {activeCard.component}
+        </div>
+      )}
     </div>
   );
 };

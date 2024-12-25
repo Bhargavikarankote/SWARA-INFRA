@@ -71,6 +71,7 @@ const Construction = () => {
               <img src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/2-s.jpg" alt="Thumbnail 1" />
               <img src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/3-s.jpg" alt="Thumbnail 2" />
               <img src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/4-s.jpg" alt="Thumbnail 3" />
+              <img src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/4-s.jpg" alt="Thumbnail 3" />
             </div>
           </div>
         </div>

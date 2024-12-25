@@ -8,7 +8,7 @@
   
   .main-services-container h2 {
     text-align: center;
-    color: #ffa500;
+    color: #4B0082;
     padding: 40px 40px;
   }
   .card {
@@ -74,7 +74,7 @@
   }
   
   .card:hover .card-text h3 {
-    color: rgb(253, 186, 60); /* Change the title color on hover */
+    color: #FFBC13; /* Change the title color on hover */
   }
   
   .card:hover .card-text p {

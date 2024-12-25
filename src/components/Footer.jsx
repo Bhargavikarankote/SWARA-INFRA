@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-column">
         <img src="https://swarainfra.homes/static/media/logo.b9aec6b0bfc6345fdc2e.png" alt="Swara Infra Logo" className="footer-logo" />
         <h1>Swara Infra</h1>
-        <div className="social-links">
+        <div className="social-links2">
           <a href="#" aria-label="Instagram">
             <i className="fab fa-instagram"></i>
           </a>
@@ -29,13 +29,16 @@ const Footer = () => {
         <h4>Links</h4>
         <ul>
           <li>
-            <a href="/about">About Us</a>
+            <a href="/AboutUs">About Us</a>
           </li>
           <li>
-            <a href="/projects">Construction</a>
+            <a href="/Projects">Construction</a>
           </li>
           <li>
             <a href="/contact">Contact Us</a>
+          </li>
+          <li>
+            <a href="/packages">Packages</a>
           </li>
         </ul>
       </div>

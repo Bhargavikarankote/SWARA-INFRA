@@ -1,10 +1,9 @@
 import React from "react";
 // import "./App.css";
-import HoverCard from "../components/HoverCard";
+import AboutUs from "../components/AboutUs";
 import ProgressBar from "../components/ProgressBar";
 import ServicesBanner from "../components/ServicesBanner";
 import TeamSection from "../components/TeamSection";
-
 
 
 
@@ -12,7 +11,7 @@ function About() {
   return (
     <div className="App">
       {/* <TopBar/> */}
-      <HoverCard/>
+      <AboutUs/>
       <ProgressBar/>
       <ServicesBanner/>
       <TeamSection/>

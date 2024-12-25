@@ -1,6 +1,6 @@
 // components/BallCursor/BallCursor.jsx
 import React, { useEffect, useState } from "react";
-import "../styles/BallCursor.css"; // Import the styling for the cursor
+import "../styles/Cursor.css"; // Import the styling for the cursor
 
 const BallCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

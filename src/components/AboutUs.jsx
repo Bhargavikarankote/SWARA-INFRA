@@ -1,89 +1,85 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/AboutUs.css";
-import { Pagination, Navigation } from "swiper/modules";
 
-function AboutUs() {
+// Import Images (Ensure these paths are correct)
+import vision from "../assets/vision.jpg";
+import mission from "../assets/mission.jpg";
+import featuring from "../assets/featuring.jpg";
+
+const AboutUs = () => {
   return (
-    <section className="about-us">
-      
-      <div className="about-header">
+    <div className="about-us-section py-5">
+      <div className="container">
+        {/* Section Title */}
+        <div className="text-center mb-5">
+          <h2>About Us</h2>
+          <p className="text-muted">
+            Swarainfra turns that dream into reality. We're your one-stop shop
+            for everything home construction. From expert civil engineers to a
+            team that oversees every detail, we handle it all.
+          </p>
+        </div>
 
-        <h1>About Us</h1>
-      
+        {/* Card 1 */}
+        <div className="card mb-5 shadow-sm">
+          <div className="row no-gutters align-items-center">
+            <div className="col-md-6">
+              <img src={mission} alt="Mission" className="img-fluid fixed-image" />
+            </div>
+            <div className="col-md-6 p-4">
+              <h3>Our Mission</h3>
+              <p>
+                We believe that just growing bigger isn’t growing better.
+                Growing better means building a company and culture that endure
+                and scale to meet the needs of our customers for years to come.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 2 */}
+        <div className="card mb-5 shadow-sm">
+          <div className="row no-gutters align-items-center flex-row-reverse">
+            <div className="col-md-6">
+              <img src={vision} alt="Vision" className="img-fluid fixed-image" />
+            </div>
+            <div className="col-md-6 p-4">
+              <h3>Our Vision</h3>
+              <p>
+                Our vision at Swara Infra is to be recognized as the premier
+                construction company, setting the standard for excellence in the
+                industry. We envision a future where our innovative solutions,
+                sustainable practices, and unwavering commitment to quality
+                propel us to the forefront of construction innovation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 3 */}
+        <div className="card mb-5 shadow-sm">
+          <div className="row no-gutters align-items-center">
+            <div className="col-md-6">
+              <img
+                src={featuring}
+                alt="Featuring"
+                className="img-fluid fixed-image"
+              />
+            </div>
+            <div className="col-md-6 p-4">
+              <h3>Featuring</h3>
+              <p>
+                New & Trending Designs, No Subcontracts, No Hidden Charges,
+                Timely Delivery, Fair Pricing, High-quality work with No
+                Compromise.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-    
-      <Swiper
-        slidesPerView={2}
-        spaceBetween={20}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="about-carousel"
-      >
-        
-        <SwiperSlide>
-          <div className="carousel-content">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
-              alt="Mission Icon"
-              className="carousel-icon"
-            />
-            <h3>Our Mission</h3>
-            <p>
-              Our mission is to build a sustainable future by delivering
-              exceptional construction projects that exceed client expectations,
-              uphold the highest standards of quality, safety, and integrity,
-              and positively impact communities and the environment.
-            </p>
-          </div>
-        </SwiperSlide>
-
-        
-        <SwiperSlide>
-          <div className="carousel-content">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1710/1710851.png"
-              alt="Vision Icon"
-              className="carousel-icon"
-            />
-            <h3>Our Vision</h3>
-            <p>
-              Our vision at Swara Infra is to be recognized as the premier
-              construction company, setting the standard for excellence in the
-              industry. We envision a future where our innovative solutions are
-              sustainable.
-            </p>
-          </div>
-        </SwiperSlide>
-
-    
-        <SwiperSlide>
-          <div className="carousel-content">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/2344/2344523.png"
-              alt="Features Icon"
-              className="carousel-icon"
-            />
-            <h3>Our Features</h3>
-            <ul>
-              <li>New & Trending Designs</li>
-              <li>No Subcontracts</li>
-              <li>No Hidden Charges</li>
-              <li>Timely Delivery</li>
-              <li>Fair Pricing</li>
-              <li>High-quality Work with No Compromise</li>
-            </ul>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </section>
+    </div>
   );
-}
+};
 
 export default AboutUs;
-

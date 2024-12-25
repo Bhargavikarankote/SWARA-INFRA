@@ -21,7 +21,7 @@ body {
 .offer-section h2 {
   font-size: 28px; /* Slightly bigger for prominence */
   margin-bottom: 20px;
-  color: #ffa500;
+  color: #4B0082;
 }
 
 .cards {
@@ -62,7 +62,7 @@ body {
 
 .card1 button {
   padding: 10px 20px;
-  background-color: #ffa500;
+  background-color: #4B0082;
   border: none;
   color: white;
   border-radius: 5px;
@@ -71,10 +71,9 @@ body {
 }
 
 .card1 button:hover {
-  background-color: darkorange;
+  background-color: #4B0082;
 }
 
-/* Awesome Facts Section */
 .facts-section {
   text-align: center;
   background-size: cover;
@@ -82,7 +81,7 @@ body {
   color: white;
   background-repeat: no-repeat; 
   /* background-position: center; */
-  padding: 60px 0; /* Increased padding for better spacing */
+  padding: 60px 0;
   width: 100%; 
   margin: 0; 
   box-sizing: border-box;
@@ -115,7 +114,7 @@ body {
 
 .fact h4 {
   font-size: 30px; /* Increased size for better visibility */
-  color: #ffa500;
+  color: white;
   font-weight: bold;
 }
 

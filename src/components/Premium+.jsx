@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import "../styles/Dropdown.css";
+import "../styles/Accordion.css";
 
-const Premiumplus = () => {
-  const menuItems = [
+const Accordion = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
+  const menuitems = [
     {
       title: "Design and Drawing",
       content: [
@@ -198,53 +204,44 @@ const Premiumplus = () => {
           title: "Payment Structure",
           content:[
             "A customized payment schedule will be shared based on the project specifications",
-          ],
-        },
-        {
-          title: "Warranty and Guarantee",
-          content:[
-            "Construction guarantee – 1 Year ; Waterproofing warranty – 10 Years",
-"Guarantee & warranty is provided on Stamp paper",
-          ] ,
-        },
-  ];
-
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const handleClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index); // Toggle active item
-  };
+],
+},
+];
 
   return (
-    <div className="dropdown-container">
-      <div className="dropdown-menu">
-        {menuItems.map((item, index) => (
-          <div key={index} className="dropdown-item">
-            {/* Title */}
-            <div
-              className={`dropdown-title ${
-                activeIndex === index ? "active" : ""
-              }`}
-              onClick={() => handleClick(index)}
-            >
-              {item.title}
-              <span className="icon">{activeIndex === index ? "-" : "+"}</span>
-            </div>
-            {/* Content */}
-            {activeIndex === index && (
-              <div className="dropdown-content">
-                <ul>
-                  {item.content.map((contentItem, contentIndex) => (
-                    <li key={contentIndex}>{contentItem}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+    <div className="accordion-container">
+      {/* Add Heading at the Top */}
+      <h1 className="accordion-heading">Our PremiumPlus Services</h1>
+    <div className="accordion">
+      {menuitems.map((item, index) => (
+        <div key={index} className="accordion-item">
+          <div
+            className={`accordion-title ${
+              activeIndex === index ? "active" : ""
+            }`}
+            onClick={() => toggleAccordion(index)}
+          >
+            <span>{item.title}</span>
+            <span>{activeIndex === index ? "-" : "+"}</span>
           </div>
-        ))}
-      </div>
+          {activeIndex === index && (
+            <div className="accordion-content">
+             {Array.isArray(item.content)?(
+              <ul>
+                {item.content.map((subItem,subIndex)=>(
+                  <li key={subIndex}>{subItem}</li>
+                ))}
+              </ul>
+             ):(
+              <p>{item.content}</p>
+             )}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
     </div>
   );
 };
 
-export default Premiumplus;
+export default Accordion;

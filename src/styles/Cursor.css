@@ -8,5 +8,5 @@
   transform: translate(-50%, -50%); /* Center the cursor at the mouse point */
   z-index: 9999; /* Ensure it stays above other elements */
   transition: transform 0.1s ease-out; /* Add a smooth effect */
-  background-color: transparent; /* No fill */
+  background-color: transparent;/* No fill */
 }
