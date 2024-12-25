@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/SWARA-INFRA/static/css/main.81f2f244.css",
-    "main.js": "/SWARA-INFRA/static/js/main.beb15aa7.js",
+    "main.css": "/SWARA-INFRA/static/css/main.dc8919a5.css",
+    "main.js": "/SWARA-INFRA/static/js/main.c4cc2613.js",
     "static/js/453.0aefb1aa.chunk.js": "/SWARA-INFRA/static/js/453.0aefb1aa.chunk.js",
-    "static/media/featuring.jpeg": "/SWARA-INFRA/static/media/featuring.e534c4632eee1b287796.jpeg",
-    "static/media/mission.jpeg": "/SWARA-INFRA/static/media/mission.87b6083ff3199f2ff435.jpeg",
-    "static/media/vision.jpeg": "/SWARA-INFRA/static/media/vision.02ea449980cd367b9901.jpeg",
+    "static/media/mission.jpg": "/SWARA-INFRA/static/media/mission.87b6083ff3199f2ff435.jpg",
+    "static/media/featuring.jpg": "/SWARA-INFRA/static/media/featuring.a3b9a1333aac25a9b471.jpg",
+    "static/media/vision.jpg": "/SWARA-INFRA/static/media/vision.02ea449980cd367b9901.jpg",
     "static/media/bootstrap-icons.woff?": "/SWARA-INFRA/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/SWARA-INFRA/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/slick.svg": "/SWARA-INFRA/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -13,12 +13,12 @@
     "static/media/slick.ttf": "/SWARA-INFRA/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/SWARA-INFRA/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/SWARA-INFRA/index.html",
-    "main.81f2f244.css.map": "/SWARA-INFRA/static/css/main.81f2f244.css.map",
-    "main.beb15aa7.js.map": "/SWARA-INFRA/static/js/main.beb15aa7.js.map",
+    "main.dc8919a5.css.map": "/SWARA-INFRA/static/css/main.dc8919a5.css.map",
+    "main.c4cc2613.js.map": "/SWARA-INFRA/static/js/main.c4cc2613.js.map",
     "453.0aefb1aa.chunk.js.map": "/SWARA-INFRA/static/js/453.0aefb1aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81f2f244.css",
-    "static/js/main.beb15aa7.js"
+    "static/css/main.dc8919a5.css",
+    "static/js/main.c4cc2613.js"
   ]
 }
