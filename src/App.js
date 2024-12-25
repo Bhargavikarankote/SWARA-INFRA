@@ -1,5 +1,64 @@
+// import React, { useState } from 'react';
+// import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+// import Home from './Pages/home';
+// import Packages from './Pages/Packages';
+// import About from './Pages/About';
+// import Contact from './components/contact';
+// import Projects from './components/Projects';
+// import TopBar from './components/TopBar';
+// import Navbar from './components/Navbar';
+// import Footer from './components/Footer';
+// import Premium from './components/Premium';
+// import Login from './components/Login'; 
+// import BallCursor from "./components/BallCursor";
+
+
+// const App = () => {
+//   const [isLoggedIn, setIsLoggedIn] = useState(false); 
+
+ 
+//   const handleLogin = () => {
+//     setIsLoggedIn(true);
+//   };
+
+//   return (
+//     <Router>
+//       <div>
+//       <BallCursor />
+//         <TopBar />
+//         <Navbar />
+//         <Routes>
+//           {/* Route Definitions */}
+//           <Route path="*" element={<Home />} />
+//           <Route path="/packages" element={<Packages />} />
+//           <Route path="/contact" element={<Contact />} />
+//           <Route path="/about" element={<About />} />
+//           <Route
+//             path="/projects"
+//             element={
+//               isLoggedIn ? (
+//                 <Projects />
+//               ) : (
+//                 <Navigate to="/login" state={{ from: '/projects' }} />
+//               )
+//             }
+//           />
+//           <Route path="/premium" element={<Premium />} />
+//           <Route
+//             path="/login"
+//             element={<Login handleLogin={handleLogin} />}
+//           />
+//         </Routes>
+//         <Footer />
+//       </div>
+//     </Router>
+//   );
+// };
+
+// export default App;
+
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Pages/home';
 import Packages from './Pages/Packages';
 import About from './Pages/About';
@@ -9,9 +68,8 @@ import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Premium from './components/Premium';
-import Login from './components/Login'; // Import Login component
+import { Login, Register } from './components/Auth'; // Updated path for Login and Register components
 import BallCursor from "./components/BallCursor";
-
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Manage login state
@@ -24,7 +82,7 @@ const App = () => {
   return (
     <Router>
       <div>
-      <BallCursor />
+        <BallCursor />
         <TopBar />
         <Navbar />
         <Routes>
@@ -47,6 +105,10 @@ const App = () => {
           <Route
             path="/login"
             element={<Login handleLogin={handleLogin} />}
+          />
+          <Route
+            path="/register"
+            element={<Register />}
           />
         </Routes>
         <Footer />
