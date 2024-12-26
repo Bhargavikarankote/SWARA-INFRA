@@ -85,6 +85,7 @@
 
 @media (max-width: 768px) {
   .tabs button {
+    
     font-size: 14px;
     padding: 8px 15px;
   }
@@ -105,6 +106,7 @@
 
 @media (max-width: 425px) {
   .tabs {
+  
     flex-direction: column;
   }
 
@@ -127,12 +129,14 @@
   }
 
   .projects-container {
+    margin-top: 140px;
     padding: 10px;
   }
 }
 
 @media (max-width: 375px) {
   .tabs button {
+    
     font-size: 12px;
     padding: 8px 10px;
   }
@@ -144,6 +148,7 @@
 
 @media (max-width: 320px) {
   .tabs button {
+   
     font-size: 10px;
     padding: 5px 8px;
   }
@@ -157,6 +162,7 @@
   }
 
   .projects-container {
+    margin-top: 190px;
     padding: 10px;
   }
 }

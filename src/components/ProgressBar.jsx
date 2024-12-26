@@ -1,22 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "../styles/ProgressBar.css";
 
 function ProgressBar({ progress }) {
   const [currentProgress, setCurrentProgress] = useState(0);
+  const progressBarRef = useRef(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setCurrentProgress(progress); // Set the actual progress after the component is rendered
-    }, 300); // Delay for smooth animation (optional)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setCurrentProgress(progress); // Fill the progress bar
+        } else {
+          setCurrentProgress(0); // Reset when it's out of view
+        }
+      },
+      { threshold: 0.5 } // Trigger when 50% of the progress bar is visible
+    );
 
-    return () => clearTimeout(timer); // Clean up the timer
+    if (progressBarRef.current) {
+      observer.observe(progressBarRef.current);
+    }
+
+    return () => {
+      if (progressBarRef.current) {
+        observer.unobserve(progressBarRef.current);
+      }
+    };
   }, [progress]);
 
   return (
-    <div className="progress-bar-container">
+    <div className="progress-bar-container" ref={progressBarRef}>
       <div
         className="progress"
-        style={{ width: `${currentProgress}% `}}
+        style={{ width: `${currentProgress}%` }}
       ></div>
     </div>
   );

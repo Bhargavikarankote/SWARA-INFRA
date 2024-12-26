@@ -30,24 +30,27 @@ const data = [
 
 const Cards = () => {
   return (
-  <div className="main-services-container">
+    <div className="main-services-container">
       {/* Add heading line here */}
       <h2 className="main-services-heading">Main Services</h2>
-    <div className="card-container">
-      {data.map((item, index) => (
-        <div className="card" key={index}>
-          <div className={`card-content ${index % 2 === 0 ? "image-left" : "image-right"}`}>
-            <img src={item.image} alt={item.title} className="card-image" />
-            <div className="card-text">
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+      <div className="card4-container">
+        {data.map((item, index) => (
+          <div className="card4" key={index}>
+            <div
+              className={`card4-content ${
+                index % 2 === 0 ? "image-left" : "image-right"
+              }`}
+            >
+              <img src={item.image} alt={item.title} className="card4-image" />
+              <div className="card4-text">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-    </div>
-
   );
 };
 
