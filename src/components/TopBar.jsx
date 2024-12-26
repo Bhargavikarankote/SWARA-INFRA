@@ -32,8 +32,7 @@ const TopBar = () => {
           
           <span>📞 +1 718-999-3939</span>
           <span>✉ contact@construction.com</span>
-          <span>⏰ Mon-Fri: 7:00 - 7:00</span>
-        </div>
+          <span>🕖 Mon-Fri: 7:00 - 7:00</span>        </div>
     </div>
   );
 };

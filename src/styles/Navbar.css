@@ -1,62 +1,62 @@
-.navbar {
+.custom-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: white;
-  position: relative;
-  z-index: 10;
-  margin-right: 50px;
+  position: fixed; /* Keeps it on top of the viewport */
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* High enough to ensure it's above other content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
-.social-links {
+.custom-social-links {
   display: flex;
   gap: 15px;
-  justify-content: flex-start; 
-  margin-left: 50px; 
+  justify-content: flex-start;
+  margin-left: 50px;
 }
 
-.social-links a {
+.custom-social-links a {
   text-decoration: none;
-  color: #4B0082;
-  font-size: 1.2em; 
+  color: #4b0082;
+  font-size: 1.2em;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-links a:hover {
-  color: #ffcc00; 
-  transform: scale(1.2); 
+.custom-social-links a:hover {
+  color: #ffbc13;
+  transform: scale(1.2);
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.custom-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1010;
 }
 
-.navbar-logo {
-  width: 50px;
-  height: auto;
+.custom-hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
 }
 
-.logo-text {
-  font-size: 24px;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  color: white;
-}
-
-.nav-links {
+.custom-nav-links {
   display: flex;
   list-style: none;
   gap: 20px;
 }
 
-.nav-links li {
+.custom-nav-links li {
   margin: 0;
 }
 
-.nav-links a {
+.custom-nav-links a {
   text-decoration: none;
   font-family: Arial, sans-serif;
   color: black;
@@ -64,28 +64,31 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #ffcc00; 
+.custom-nav-links a:hover {
+  color: #ffcc00;
   transform: scale(1.3);
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  z-index: 11;
-}
-
-.hamburger div {
-  width: 30px;
-  height: 3px;
-  background-color: black;
-  border-radius: 3px;
+.custom-nav-links.custom-active {
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
-  .nav-links {
+  .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed; /* Keeps it on top of the viewport */
+    top: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* High enough to ensure it's above other content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  .custom-nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -99,28 +102,42 @@
     text-align: right;
   }
 
-  .nav-links.active {
+  .custom-nav-links.custom-active {
     display: flex;
   }
 
-  .nav-links a {
+  .custom-nav-links a {
     color: black;
     padding: 10px 0;
   }
 
-  .hamburger {
+  .custom-hamburger {
     display: flex;
   }
 
-  .social-links {
+  .custom-social-links {
     margin-bottom: 10px;
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .social-links {
+  .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed; /* Keeps it on top of the viewport */
+    top: 120px;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* High enough to ensure it's above other content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  .custom-social-links {
     flex-direction: row;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 }

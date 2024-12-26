@@ -1,6 +1,27 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import "../styles/Offer.css";
 
+const AnimatedCounter = ({ endValue, duration }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const increment = endValue / (duration / 100); // Determines the increment step
+    const interval = setInterval(() => {
+      start += increment;
+      if (start >= endValue) {
+        clearInterval(interval);
+        setCount(endValue);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, [endValue, duration]);
+
+  return <h4>{count}+</h4>;
+};
 const Offer = () => {
   return (
     <div className="container">
@@ -15,10 +36,8 @@ const Offer = () => {
             />
             <h3>Architecture</h3>
             <p>
-              Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel
-              diam scelerisque, pretium urna.
+            Experienced Architects to work on the floor plans, elevation and working drawings which are completely vastu oriented.
             </p>
-            <button>READ MORE</button>
           </div>
           <div className="card1">
             <img
@@ -27,10 +46,8 @@ const Offer = () => {
             />
             <h3>Design</h3>
             <p>
-              Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel
-              diam scelerisque, pretium urna.
+            Our structural engineers ensure that the finalized design is structurally compatible as per the IS Standards. MEP engineers work on the electrical & plumbing line drawings suiting the client’s requirements and workability on site.
             </p>
-            <button>READ MORE</button>
           </div>
           <div className="card1">
             <img
@@ -39,29 +56,26 @@ const Offer = () => {
             />
             <h3>Construction</h3>
             <p>
-              Nulla iaculis turpis in nibh aliquam maximus. In dignissim arcu vel
-              diam scelerisque, pretium urna.
+            A site engineer led by an experienced project coordinator works dedicatedly on site overseeing the process of home construction from day one till key handover.
             </p>
-            <button>READ MORE</button>
           </div>
         </div>
       </section>
 
-      {/* AWESOME FACTS Section */}
       <section className="facts-section">
         <h2>The Construction Company</h2>
         <h3>AWESOME FACTS</h3>
         <div className="facts">
           <div className="fact">
-            <h4>13691+</h4>
+            <AnimatedCounter endValue={13691} duration={3000} />
             <p>Projects Completed</p>
           </div>
           <div className="fact">
-            <h4>1725+</h4>
+            <AnimatedCounter endValue={1725} duration={3000} />
             <p>Satisfied Clients</p>
           </div>
           <div className="fact">
-            <h4>984+</h4>
+            <AnimatedCounter endValue={984} duration={3000} />
             <p>Workers Employed</p>
           </div>
         </div>
@@ -69,5 +83,6 @@ const Offer = () => {
     </div>
   );
 };
+
 
 export default Offer;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Navbar.css";
+import "../styles/Navbar.css"; // Updated to reflect unique CSS
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,8 +14,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
-      <div className="social-links">
+    <nav className="custom-navbar">
+      <div className="custom-social-links">
         <a href="#" aria-label="Instagram">
           <i className="fab fa-instagram"></i>
         </a>
@@ -33,18 +33,15 @@ function Navbar() {
         </a>
       </div>
 
-      
-       
-
       {/* Hamburger Menu */}
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className="custom-hamburger" onClick={toggleMenu}>
         <div></div>
         <div></div>
         <div></div>
       </div>
 
       {/* Navigation Links */}
-      <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+      <ul className={`custom-nav-links ${isMenuOpen ? "custom-active" : ""}`}>
         <li>
           <Link to="/" onClick={closeMenu}>
             Home

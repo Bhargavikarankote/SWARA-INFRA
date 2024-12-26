@@ -3,7 +3,7 @@ import '../styles/FeaturedWork.css';  // Assuming your CSS is in App.css
 
 const ProjectCard = ({ imgSrc, title, description, buildingName }) => {
   return (
-    <div className="project-card">
+    <div className="project-card1">
       <img src={imgSrc} alt={title} />
       <div className="project-info">
         <h3>{title}</h3>

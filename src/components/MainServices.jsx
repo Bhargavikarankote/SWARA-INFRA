@@ -22,7 +22,7 @@ const data = [
   },
   {
     image: "https://img.freepik.com/free-photo/inspectors-with-sketch_1098-15451.jpg?semt=ais_hybrid",
-    title: "Personalization and Expression:",
+    title: "Personalize and Expression:",
     description:
       "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
   },

@@ -1,16 +1,24 @@
 .about-us-section {
   background-color: #f8f9fa; /* Light grey background */
   padding: 20px 0;
+  margin-top: 80px;
 }
 
 .about-us-section h2 {
   font-weight: bold;
   color: #4B0082;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .about-us-section p {
   color: #555;
   line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
 }
 
 /* Card Styles */
@@ -25,14 +33,14 @@
 /* Hover effect for cards */
 .card:hover {
   /* background-color:#e6b903; */
-   /* Blue background on hover */
+  /* Blue background on hover */
   transform: translateY(-8px); /* Slight lift effect */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
 }
 
 .card:hover h3,
 .card:hover p {
-  color:black; /* Text turns white on hover */
+  color: black; /* Text turns white on hover */
 }
 
 /* Image Styles */
@@ -50,11 +58,36 @@
   color: #333;
   font-weight: bold;
   transition: color 0.3s ease; /* Smooth text color transition */
+  font-size: 1.5rem;
 }
 
-/* Card Content Paragraph */
 .card p {
   color: #555;
   font-size: 1rem;
   transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+/* Responsive Headings in "About Us" section */
+@media (max-width: 768px) {
+  .about-us-section  {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-us-section  {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-us-section  {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-us-section  {
+    margin-top: 150px;
+  }
 }
