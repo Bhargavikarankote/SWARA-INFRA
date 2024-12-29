@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/SwaraInfra/static/css/main.0978276d.css",
-    "main.js": "/SwaraInfra/static/js/main.1e77ee20.js",
-    "static/js/453.0aefb1aa.chunk.js": "/SwaraInfra/static/js/453.0aefb1aa.chunk.js",
-    "static/media/mission.jpg": "/SwaraInfra/static/media/mission.87b6083ff3199f2ff435.jpg",
-    "static/media/featuring.jpg": "/SwaraInfra/static/media/featuring.a3b9a1333aac25a9b471.jpg",
-    "static/media/vision.jpg": "/SwaraInfra/static/media/vision.02ea449980cd367b9901.jpg",
-    "static/media/bootstrap-icons.woff?": "/SwaraInfra/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/SwaraInfra/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/header-bg.png": "/SwaraInfra/static/media/header-bg.f01a7755d5f2d08cba33.png",
-    "static/media/slick.svg": "/SwaraInfra/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/SwaraInfra/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/SwaraInfra/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/SwaraInfra/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/SwaraInfra/index.html",
-    "main.0978276d.css.map": "/SwaraInfra/static/css/main.0978276d.css.map",
-    "main.1e77ee20.js.map": "/SwaraInfra/static/js/main.1e77ee20.js.map",
-    "453.0aefb1aa.chunk.js.map": "/SwaraInfra/static/js/453.0aefb1aa.chunk.js.map"
+    "main.css": "/SWARA-INFRA/static/css/main.53e6fe46.css",
+    "main.js": "/SWARA-INFRA/static/js/main.9a71f329.js",
+    "static/js/453.0aefb1aa.chunk.js": "/SWARA-INFRA/static/js/453.0aefb1aa.chunk.js",
+    "static/media/mission.jpg": "/SWARA-INFRA/static/media/mission.87b6083ff3199f2ff435.jpg",
+    "static/media/featuring.jpg": "/SWARA-INFRA/static/media/featuring.a3b9a1333aac25a9b471.jpg",
+    "static/media/vision.jpg": "/SWARA-INFRA/static/media/vision.02ea449980cd367b9901.jpg",
+    "static/media/bootstrap-icons.woff?": "/SWARA-INFRA/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/SWARA-INFRA/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/header-bg.png": "/SWARA-INFRA/static/media/header-bg.f01a7755d5f2d08cba33.png",
+    "static/media/slick.svg": "/SWARA-INFRA/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/SWARA-INFRA/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/SWARA-INFRA/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/SWARA-INFRA/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/SWARA-INFRA/index.html",
+    "main.53e6fe46.css.map": "/SWARA-INFRA/static/css/main.53e6fe46.css.map",
+    "main.9a71f329.js.map": "/SWARA-INFRA/static/js/main.9a71f329.js.map",
+    "453.0aefb1aa.chunk.js.map": "/SWARA-INFRA/static/js/453.0aefb1aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0978276d.css",
-    "static/js/main.1e77ee20.js"
+    "static/css/main.53e6fe46.css",
+    "static/js/main.9a71f329.js"
   ]
 }
