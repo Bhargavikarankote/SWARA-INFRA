@@ -19,7 +19,8 @@ const Contact = () => {
       <div className="image-placeholder" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31522.51234589949!2d107.00280043271502!3d11.537387973225078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM13CsDMxJzE0LjkiTiAxMDfCsDAwJzE5LjAiRQ!5e0!3m2!1sen!2s!4v1689801453405"
+            // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31522.51234589949!2d107.00280043271502!3d11.537387973225078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM13CsDMxJzE0LjkiTiAxMDfCsDAwJzE5LjAiRQ!5e0!3m2!1sen!2s!4v1689801453405"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d605.6396172426017!2d75.11453665467444!3d15.355479937451365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d729e11eaac5%3A0x5188820b2489475!2sRidhi%20sidhi%20glass%20hubali!5e0!3m2!1sen!2sin!4v1717178014933!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
