@@ -8,9 +8,17 @@
 }
 
 .team-title {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: #4B0082;
   margin-bottom: 20px;
+
+  margin: 0;
+
+  font-size: 40px;
+  font-weight: 400;
+  /* color: white; */
+  margin: 0;
+  font-family: lilita one;
 }
 
 .team-carousel .team-member {

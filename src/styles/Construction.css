@@ -31,9 +31,15 @@
 
 .why-choose-us h2 {
   color: #4B0082;
-  font-size: 28px;
+  /* font-size: 28px; */
   margin-bottom: 20px;
   position: relative;
+
+  font-size: 40px;
+  font-weight: 400;
+ 
+  margin: 0;
+  font-family: lilita one;
 }
 
 .why-choose-us h2::after {
@@ -43,6 +49,12 @@
   height: 3px;
   background-color: #4B0082;
   margin-top: 5px;
+
+  font-size: 40px;
+  font-weight: 400;
+  
+  margin: 0;
+  font-family: lilita one;
 }
 
 .dropdown-header {
@@ -76,9 +88,15 @@
 
 .about-us h2 {
   color: #ffc500;
-  font-size: 28px;
+  /* font-size: 28px; */
   margin-bottom: 20px;
   position: relative;
+
+  font-size: 40px;
+  font-weight: 400;
+ 
+  margin: 0;
+  font-family: lilita one;
 }
 
 .about-us h2::after {

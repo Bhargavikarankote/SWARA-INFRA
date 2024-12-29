@@ -5,7 +5,7 @@ import ProgressBar from "./ProgressBar";
 function ServicesBanner() {
   return (
     <section className="services-banner">
-      <h2>We Build Professional and Smart Buildings</h2>
+      <h2 className="services">We Build Professional and Smart Buildings</h2>
       <div className="services">
         <div className="service">
           <span className="service-text">Design and Build</span>

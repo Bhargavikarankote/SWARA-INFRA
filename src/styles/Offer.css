@@ -1,73 +1,119 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0; 
-  box-sizing: border-box;
-}
-
-.container2 {
-  width: 90%;
-  margin: 0 auto; 
-}
-
 .offer-section {
   text-align: center;
-  padding: 50px 0; 
-}
-
-
-.offer-section h2 {
-  font-size: 28px; 
-  margin-bottom: 20px;
-  color: #4B0082;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap;
+  padding: 60px 80px;
   position: relative;
-  background-image: url(https://www.supersonicplayground.com/wp-content/themes/supersonicplayground/img/backgrounds/blue-parallax-left-top.svg);
+  /* background-image: url(file:///C:/Users/Dell-Pc/Pictures/Texture4.svg); */
   background-size: cover;
-  background-position:center; 
+  background-position: center;
 }
 
-.card1 {
-  width: 30%; 
-  background-color: #f9f9f9;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 30px; 
-  border: 2px solid #ddd;
-}
-
-.card1 img {
-  width: 100%;
-  height: 200px; 
-  object-fit: cover; 
-  border-radius: 10px;
-}
-
-.card1 h3 {
-  margin: 15px 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.card1 p {
-  font-size: 14px;
-  color: #666;
+.offer-title {
+  /* font-size: 2rem; */
+  color: #4B0082;
   margin-bottom: 20px;
+
+  font-size: 40px;
+  font-weight: 400;
+  
+  margin: 0;
+  font-family: lilita one;
 }
 
-.card1:hover {
-  transform: translateY(-10px); 
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+.offer-carousel .offer-member {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 5px; 
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
+
+.offer-carousel .offer-member:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+  background-color: #f0f8ff; 
+}
+
+.slick-next,
+.slick-prev {
+  background-color: #3B0082; 
+  color: #fff; 
+  border: none; 
+  border-radius: 50%; 
+  width: 30px;
+  height: 30px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  position: absolute; 
+}
+
+.slick-next {
+  right: -40px; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -40px; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  background-color: #555; 
+  transform: translateY(-50%) scale(1.1); 
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: '';
+}
+
+.slick-next::after,
+.slick-prev::after {
+  content: ''; 
+  border: solid white;
+  border-width: 0 2px 2px 0; 
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+}
+
+.slick-next::after {
+  transform: rotate(-45deg); 
+}
+
+.slick-prev::after {
+  transform: rotate(135deg); 
+}
+
+.offer-member-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover; 
+  filter: none; 
+  opacity: 1;
+  height: 300px;
+}
+
+.offer-member-name {
+  font-size: 1.5rem;
+  color: #3B0082; 
+  margin: 5px 0;
+}
+
+.offer-member-role {
+  font-size: 0.9rem;
+  color: black; 
+}
+
 
 .fact:hover {
   transform: scale(1.05); 
