@@ -50,8 +50,8 @@ const Footer = () => {
           Hubballi Office: Shop No 17, Second Floor, Ridhi Sidhi Complex,
           Opp. Giants School Akshay Park, Gokul Road Hubballi
         </p>
-        <p>Phone No: [Your Phone Number]</p>
-        <p>Email ID: [Your Email ID]</p>
+        <p>Phone No: +91 9538675322<br></br>+91 9902718498</p>
+        <p>Email ID: swarainfra1@gmail.com</p>
       </div>
     </footer>
   );
