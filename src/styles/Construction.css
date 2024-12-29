@@ -88,15 +88,11 @@
 
 .about-us h2 {
   color: #ffc500;
-  /* font-size: 28px; */
+  font-size: 28px;
   margin-bottom: 20px;
   position: relative;
 
-  font-size: 40px;
-  font-weight: 400;
- 
-  margin: 0;
-  font-family: lilita one;
+  
 }
 
 .about-us h2::after {
