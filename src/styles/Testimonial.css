@@ -1,19 +1,21 @@
-/* General Styles */
 .container {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 10px;
   color: #333;
+  position: relative;
+  background-image: url(https://cdn.prod.website-files.com/61c1fed84b29a841427d2d59/66d73e2c1b8381ca608aa73c_case%20study%20shapes.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .content {
-  display: flex; /* Use flexbox to align sections horizontally */
-  gap: 20px; /* Add spacing between the sections */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: wrap; 
 }
 
-/* Partners Section */
 .partners-section {
-  flex: 1; /* Make the section take equal space */
+  flex: 1; 
   text-align: left;
 }
 
@@ -43,11 +45,10 @@
   margin-bottom: 10px;
 }
 
-/* Testimonials Section */
 .testimonials-section {
-  flex: 1; /* Make the section take equal space */
+  flex: 1; 
   text-align: left;
-  margin-left: 80px; /* Shift the section to the right */
+  margin-left: 80px; 
 }
 
 .testimonials-section h2 {
@@ -64,8 +65,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   width: 550px;
-  height: 200px; /* Set a fixed height */
-  overflow-y: auto; /* Enable scrolling for overflow content */
+  height: 200px; 
+  overflow-y: auto; 
 }
 
 .testimonial-card p {
@@ -121,109 +122,103 @@
   background-color: #4B0082;
 }
 
-/* Responsive Styles */
-
-/* For devices with a maximum width of 768px */
 @media (max-width: 768px) {
   .content {
-    flex-direction: column; /* Stack sections vertically */
-    margin-left: 0; /* Reset margin */
+    flex-direction: column; 
+    margin-left: 0; 
   }
 
   .testimonials-section {
-    margin-left: 0; /* Reset margin */
-    margin-top: 20px; /* Add top margin for spacing */
+    margin-left: 0; 
+    margin-top: 10px; 
   }
 
   .testimonial-card {
-    width: 100%; /* Full width */
-    height: auto; /* Allow height to adjust based on content */
+    width: 100%; 
+    height: auto; 
   }
 }
 
-/* For devices with a maximum width of 425px */
 @media (max-width: 425px) {
   .testimonial-card {
-    width: 100%; /* Ensure full width */
-    padding: 15px; /* Reduce padding */
+    width: 100%;
+    padding: 15px; 
   }
 
   .testimonials-section h2 {
-    font-size: 20px; /* Slightly smaller heading */
+    font-size: 20px; 
   }
 
   .testimonial-author h4 {
-    font-size: 16px; /* Slightly smaller author name */
+    font-size: 16px; 
   }
 
   .testimonial-author p {
-    font-size: 14px; /* Slightly smaller author info */
+    font-size: 14px; 
   }
 
   .rating {
-    font-size: 16px; /* Slightly smaller rating */
+    font-size: 16px; 
   }
 
   .testimonial-buttons button {
-    padding: 8px 16px; /* Smaller buttons */
+    padding: 8px 16px; 
     font-size: 14px;
     margin: 5px;
   }
 }
 
-/* For devices with a maximum width of 375px */
 @media (max-width: 375px) {
   .testimonial-card {
-    padding: 10px; /* Further reduce padding */
+    padding: 10px; 
   }
 
   .testimonials-section h2 {
-    font-size: 18px; /* Further reduce heading size */
+    font-size: 18px; 
   }
 
   .testimonial-author h4 {
-    font-size: 14px; /* Further reduce author name */
+    font-size: 14px; 
   }
 
   .testimonial-author p {
-    font-size: 12px; /* Further reduce author info */
+    font-size: 12px; 
   }
 
   .rating {
-    font-size: 14px; /* Further reduce rating size */
+    font-size: 14px; 
   }
 
   .testimonial-buttons button {
-    padding: 6px 12px; /* Further reduce button size */
+    padding: 6px 12px; 
     font-size: 12px;
     margin: 3px;
   }
 }
 
-/* For devices with a maximum width of 320px */
 @media (max-width: 320px) {
   .testimonial-card {
-    padding: 8px; /* Minimal padding */
+    padding: 8px; 
   }
 
   .testimonials-section h2 {
-    font-size: 16px; /* Minimal heading size */
+    font-size: 16px; 
   }
 
   .testimonial-author h4 {
-    font-size: 12px; /* Minimal author name */
+    font-size: 12px; 
   }
 
   .testimonial-author p {
-    font-size: 10px; /* Minimal author info */
+    font-size: 10px; 
   }
 
   .rating {
-    font-size: 12px; /* Minimal rating size */
+    font-size: 12px; 
   }
 
   .testimonial-buttons button {
-    padding: 4px 8px; /* Minimal button size */
+    padding: 4px 8px; 
     font-size: 10px;
     margin: 2px;
   }

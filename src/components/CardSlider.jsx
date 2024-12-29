@@ -1,63 +1,7 @@
-// import React from "react";
-// import Slider from "react-slick";
-// import "../styles/CardSlider.css"; 
-
-// const CardSlider = () => {
-//   const sliderSettings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           slidesToShow: 1,
-//         },
-//       },
-//     ],
-//   };
-
-//   const cards = [
-//     {
-//       title: "1.Select any package",
-//       icon: "📦", 
-//     },
-//     {
-//       title: "2.Review & compare briefly",
-//       icon: "📝",
-//     },
-//     {
-//       title: "3.Download to know",
-//       icon: "⬇",
-//     },
-//     {
-//       title: "4.Customize requirements",
-//       icon: "⚙",
-//     },
-//   ];
-
-//   return (
-//     <div className="slider-container">
-//       <h2>How It Works</h2>
-//       <p>Convenience, & Transparency at your fingertips.</p>
-//       <Slider {...sliderSettings}>
-//         {cards.map((card, index) => (
-//           <div key={index} className="slider-card">
-//             <div className="card-icon">{card.icon}</div>
-//             <h3>{card.title}</h3>
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// };
-
-// export default CardSlider;
-
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/CardSlider.css"; // Import the CSS for the slider
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 
 const CardSlider = () => {
   const cards = [
@@ -79,14 +23,28 @@ const CardSlider = () => {
     },
   ];
 
+  // Initialize AOS when the component mounts
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Easing function
+      once: true, // Animation happens only once
+    });
+  }, []);
+
   return (
     <div className="slider-container">
-      <h2>How It Works</h2>
-      <p>Convenience, & Transparency at your fingertips.</p>
+      <h2 data-aos="fade-up">How It Works</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Convenience, & Transparency at your fingertips.</p>
       <div className="card-grid">
         {cards.map((card, index) => (
-          <div key={index} className="slider-card">
-            <div className="card-icon">{card.icon}</div>
+          <div
+            key={index}
+            className="slider-card"
+            data-aos="zoom-in"
+            data-aos-delay={`${index * 200}`} // Delay for each card to appear in sequence
+          >
+            <div className="card-icon" data-aos="fade-in">{card.icon}</div>
             <h3>{card.title}</h3>
           </div>
         ))}

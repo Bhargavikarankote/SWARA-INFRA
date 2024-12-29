@@ -1,56 +1,60 @@
 .team-section {
   text-align: center;
   padding: 100px 80px;
-  background-color: white;
+  position: relative;
+  background-image: url(https://static.tildacdn.com/tild3762-3765-4036-b461-303332616630/Frame_2.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .team-title {
   font-size: 2rem;
-  color:#4B0082;
+  color: #4B0082;
   margin-bottom: 20px;
 }
 
 .team-carousel .team-member {
-  /* background: #fff; */
+  background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0 5px; /* Reduced space between cards */
+  margin: 0 5px; 
   padding: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
+.team-carousel .team-member:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+  background-color: #f0f8ff; 
+}
+
+.slick-next{
+  background-color: #333;
+}
 .team-member-image {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
-  object-fit: cover; /* Ensures images scale proportionally and fill the space */
-  filter: none; /* Remove all filters */
-  opacity: 1; 
-  /* Fully visible */
-  transition: transform 0.3s ease; /* Smooth zoom transition */
-}
-
-.team-carousel .team-member:hover .team-member-image {
-  transform: scale(1.05); 
-  /* Slight zoom on hover */
+  object-fit: cover; 
+  filter: none; 
+  opacity: 1;
 }
 
 .team-member-name {
   font-size: 1rem;
-  color: #333; /* Darker text for better readability */
+  color: #333; 
   margin: 5px 0;
 }
 
 .team-member-role {
   font-size: 0.9rem;
-  color: #555; /* Slightly darker role text */
+  color: #555; 
 }
 
-/* Ensures images display at their original quality */
 img {
-  -webkit-transform: none; /* Prevents blurriness on webkit browsers */
+  -webkit-transform: none; 
   -moz-transform: none;
   transform: none;
-  image-rendering: auto; /* Prevents pixelation for scaled images */
+  image-rendering: auto; 
 }

@@ -1,44 +1,43 @@
-/* Shared container styling for login and registration */
 .unique-auth-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #eef2f3; /* Light background color */
+  /* background: url('c:\Users\Dell-Pc\Downloads\Loginbg.jpg') no-repeat center center fixed;  */
+  /* Add background image */
+  background-size: cover; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 1rem;
+  margin-top: 30px;
 }
 
-/* Heading for the authentication forms */
 .unique-auth-heading {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #2c3e50; /* Dark gray-blue */
+  color: #2c3e50; 
+  text-align: center;
 }
 
-/* Authentication form container */
 .unique-auth-form {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9); 
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
   width: 350px;
   max-width: 90%;
   text-align: left;
 }
 
-/* Labels for form fields */
 .unique-auth-label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #34495e; /* Slightly darker gray */
+  color: #34495e; 
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-/* Input fields styling */
 .unique-auth-input {
   width: 100%;
   padding: 0.7rem;
@@ -52,13 +51,12 @@
 
 .unique-auth-input:focus {
   outline: none;
-  border-color: #3498db; /* Blue border on focus */
+  border-color: #3498db; 
   box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
 }
 
-/* Button styling */
 .unique-auth-button {
-  background-color: #3498db; /* Primary blue */
+  background-color: #3498db; 
   color: #ffffff;
   border: none;
   padding: 0.8rem;
@@ -71,27 +69,26 @@
 }
 
 .unique-auth-button:hover {
-  background-color: #2980b9; /* Darker blue on hover */
+  background-color: #2980b9; 
 }
 
-/* Footer links for form navigation */
 .unique-auth-footer {
   margin-top: 1rem;
   color: #2c3e50;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .unique-auth-footer span {
-  color: #3498db; /* Blue link color */
+  color: #3498db; 
   cursor: pointer;
   text-decoration: underline;
 }
 
 .unique-auth-footer span:hover {
-  color: #2980b9; /* Darker blue on hover */
+  color: #2980b9; 
 }
 
-/* Responsive design adjustments */
 @media (max-width: 480px) {
   .unique-auth-form {
     padding: 1.5rem;

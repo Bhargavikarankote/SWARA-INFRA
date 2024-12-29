@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../styles/Offer.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 
 const AnimatedCounter = ({ endValue, duration, startCounting }) => {
   const [count, setCount] = useState(0);
@@ -30,6 +32,12 @@ const Offer = () => {
   const factsSectionRef = useRef(null);
 
   useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Easing function
+      once: true, // Animation happens once
+    });
+
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
@@ -52,12 +60,12 @@ const Offer = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container2">
       {/* WHAT WE OFFER Section */}
-      <section className="offer-section">
+      <section className="offer-section" data-aos="fade-up">
         <h2>WHAT WE OFFER</h2>
         <div className="cards">
-          <div className="card1">
+          <div className="card1" data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://www.housespace.in/img/sections/services/building-contruction.jpg"
               alt="The Green Building"
@@ -68,7 +76,7 @@ const Offer = () => {
               working drawings which are completely vastu oriented.
             </p>
           </div>
-          <div className="card1">
+          <div className="card1" data-aos="fade-up" data-aos-delay="200">
             <img
               src="https://st4.depositphotos.com/1007034/40271/i/450/depositphotos_402718606-stock-photo-architecture-project-showing-different-design.jpg"
               alt="House Renovation"
@@ -81,7 +89,7 @@ const Offer = () => {
               client’s requirements and workability on site.
             </p>
           </div>
-          <div className="card1">
+          <div className="card1" data-aos="fade-up" data-aos-delay="300">
             <img
               src="https://img.freepik.com/free-photo/high-angle-measuring-tools-still-life_23-2150440970.jpg?uid=R173554599&ga=GA1.1.1281800808.1725295084&semt=ais_hybrid"
               alt="Design & Construction"
@@ -97,11 +105,11 @@ const Offer = () => {
       </section>
 
       {/* AWESOME FACTS Section */}
-      <section className="facts-section" ref={factsSectionRef}>
+      <section className="facts-section" ref={factsSectionRef} data-aos="fade-up" data-aos-duration="1500">
         <h2>The Construction Company</h2>
         <h3>AWESOME FACTS</h3>
         <div className="facts">
-          <div className="fact">
+          <div className="fact" data-aos="fade-up" data-aos-delay="200">
             <AnimatedCounter
               endValue={13691}
               duration={3000}
@@ -109,7 +117,7 @@ const Offer = () => {
             />
             <p>Projects Completed</p>
           </div>
-          <div className="fact">
+          <div className="fact" data-aos="fade-up" data-aos-delay="400">
             <AnimatedCounter
               endValue={1725}
               duration={3000}
@@ -117,7 +125,7 @@ const Offer = () => {
             />
             <p>Satisfied Clients</p>
           </div>
-          <div className="fact">
+          <div className="fact" data-aos="fade-up" data-aos-delay="600">
             <AnimatedCounter
               endValue={984}
               duration={3000}

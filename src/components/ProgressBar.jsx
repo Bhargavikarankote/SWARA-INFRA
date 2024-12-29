@@ -38,4 +38,4 @@ function ProgressBar({ progress }) {
   );
 }
 
-export default ProgressBar;
+export default ProgressBar

@@ -1,4 +1,3 @@
-/* Accordion Container */
 .accordion {
   width: 750px;
   margin: 20px auto;
@@ -33,7 +32,7 @@
 
 .accordion-title.active {
   background-color: #840dda;
-  color: white; /* Adjusted text color when active */
+  color: white; 
 }
 
 .accordion-title:hover {
@@ -58,9 +57,7 @@
   font-size: 18px;
 }
 
-/* Responsive Design */
 
-/* 320px (smallest mobile devices) */
 @media (max-width: 320px) {
   .accordion {
     width: 100%;
@@ -85,7 +82,6 @@
   }
 }
 
-/* 375px (popular mobile size) */
 @media (max-width: 375px) {
   .accordion {
     width: 100%;
@@ -135,7 +131,6 @@
   }
 }
 
-/* 768px (tablet size) */
 @media (max-width: 768px) {
   .accordion {
     width: 100%;

@@ -5,7 +5,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-column">
-        <img src="https://swarainfra.homes/static/media/logo.b9aec6b0bfc6345fdc2e.png" alt="Swara Infra Logo" className="footer-logo" />
+      <a href="/" aria-label="Home">
+        <img src="https://swarainfra.homes/static/media/logo.b9aec6b0bfc6345fdc2e.png" alt="Swara Infra Logo" className="footer-logo" /></a>
         <h1>Swara Infra</h1>
         <div className="social-links2">
           <a href="#" aria-label="Instagram">
@@ -41,6 +42,7 @@ const Footer = () => {
             <a href="/packages">Packages</a>
           </li>
         </ul>
+        <p>© 2024 Swara Infra, Inc. All Rights Reserved</p>
       </div>
       <div className="footer-column">
         <h4>Address</h4>

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/MainServices.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 const data = [
   {
@@ -29,13 +31,28 @@ const data = [
 ];
 
 const Cards = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // Easing function
+      once: true, // Animation happens once
+    });
+  }, []);
+
   return (
     <div className="main-services-container">
       {/* Add heading line here */}
-      <h2 className="main-services-heading">Main Services</h2>
+      <h2 className="main-services-heading" data-aos="fade-up">
+        Main Services
+      </h2>
       <div className="card4-container">
         {data.map((item, index) => (
-          <div className="card4" key={index}>
+          <div
+            className="card4"
+            key={index}
+            data-aos="fade-up"
+            data-aos-delay={`${index * 100}`} // Stagger the animations
+          >
             <div
               className={`card4-content ${
                 index % 2 === 0 ? "image-left" : "image-right"

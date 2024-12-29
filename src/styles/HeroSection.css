@@ -147,7 +147,7 @@
 
 @media (max-width: 320px) {
   .hero-section {
-    height: 70vh;
+    height: 60vh;
     margin-top: 180px;
   }
   .carousel-caption {

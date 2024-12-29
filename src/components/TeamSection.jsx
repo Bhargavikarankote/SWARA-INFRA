@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "../styles/TeamSection.css";
+import AOS from "aos";  // Import AOS
+import "aos/dist/aos.css";  // Import AOS styles
 
 const teamMembers = [
   {
@@ -47,6 +49,8 @@ const TeamSection = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    nextArrow: <button className="slick-next">Next</button>,  
+    prevArrow: <button className="slick-prev">Previous</button>,  
     responsive: [
       {
         breakpoint: 1024,
@@ -69,12 +73,25 @@ const TeamSection = () => {
     ],
   };
 
+  // Initialize AOS on component mount
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration
+      once: true,      // Animation happens once
+    });
+  }, []);
+
   return (
     <section className="team-section">
-      <h3 className="team-title">MEET OUR TEAM</h3>
+      <h2 className="team-title">MEET OUR TEAM</h2>
       <Slider {...settings} className="team-carousel">
         {teamMembers.map((member, index) => (
-          <div key={index} className="team-member">
+          <div
+            key={index}
+            className="team-member"
+            data-aos="fade-up"  // AOS effect for each team member
+            data-aos-delay={`${index * 100}`}  // Stagger the animations
+          >
             <img
               src={member.image}
               alt={member.name}

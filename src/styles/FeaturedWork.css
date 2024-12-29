@@ -24,6 +24,7 @@
   overflow: hidden;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 350px;
 }
 
 .project-card1 img {
@@ -78,6 +79,7 @@
   }
   .project-card1 {
     width: 200px;
+    height: 300px;
   }
 }
 
@@ -87,7 +89,8 @@
     justify-content: center;
   }
   .project-card1 {
-    width: 200px; 
+    width: 200px;
+    height: 300px; 
   }
 }
 
@@ -98,6 +101,7 @@
   }
   .project-card1 {
     width: 180px;
+    height: 220px;
   }
 }
 
@@ -107,6 +111,7 @@
     justify-content: center;
   }
   .project-card1 {
-    width: 160px; 
+    width: 160px;
+    height: 200px; 
   }
 }

@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Construction.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';  // Import AOS CSS
 
 const Construction = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -8,11 +10,19 @@ const Construction = () => {
     setActiveIndex(activeIndex === index ? null : index); // Toggle dropdown visibility
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // Easing function
+      once: true, // Animation happens once
+    });
+  }, []);
+
   return (
     <div className="construction-container">
       <div className="sections-container">
         {/* Why Choose Us Section */}
-        <div className="why-choose-us">
+        <div className="why-choose-us" data-aos="fade-up">
           <h2>Why Choose Us?</h2>
           <ul>
             <li>
@@ -59,15 +69,17 @@ const Construction = () => {
         </div>
 
         {/* About Us Section */}
-        <div className="about-us">
+        <div className="about-us" data-aos="fade-up" data-aos-duration="1500">
           {/* <h2>About Us</h2> */}
           <div className="image-gallery">
             <img
               src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/1.jpg"
               alt="Main Construction Image"
               className="main-image"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
             />
-            <div className="thumbnail-gallery">
+            <div className="thumbnail-gallery" data-aos="fade-up" data-aos-delay="200">
               <img src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/2-s.jpg" alt="Thumbnail 1" />
               <img src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/3-s.jpg" alt="Thumbnail 2" />
               <img src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/4-s.jpg" alt="Thumbnail 3" />

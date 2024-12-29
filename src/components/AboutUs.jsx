@@ -59,12 +59,12 @@ const App = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="container">
+      <div className="container1">
         {cards.map((card, index) => (
           <div className="card-wrapper" key={card.id}>
             <div
               className={`card ${index === 1 ? "card-left" : index % 2 === 0 ? "card-left" : "card-right"}`}
-              data-aos={index === 1 ? "fade-left" : "fade-right"}  // Add different effects based on card index
+              data-aos={index === 1 ? "fade-left" : "fade-right"}  
             >
               {index % 2 === 0 && (
                 <img src={card.image} alt={card.title} className="card-image" />
@@ -86,4 +86,4 @@ const App = () => {
   );
 };
 
-export default App
+export default App;

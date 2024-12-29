@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import PremiumPage from "./Premium";
 import Premiumplus from "./Premium+";
@@ -10,6 +10,8 @@ import TheOne from "./TheOne";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/PricingCarouselWithSlider.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 
 const PricingCarouselWithSlider = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -110,11 +112,24 @@ const PricingCarouselWithSlider = () => {
     }
   };
 
+  // Initialize AOS when the component mounts
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Easing function
+      once: true, // Animation happens once
+    });
+  }, []);
+
   return (
     <div className="carousel-container">
-      <h2 className="carousel-header">Building Packages</h2>
-      <p className="carousel-subtext">Click on a card to display more details!</p>
-      <div className="price-slider">
+      <h2 className="carousel-header" data-aos="fade-up">
+        Building Packages
+      </h2>
+      <p className="carousel-subtext" data-aos="fade-up" data-aos-delay="100">
+        Click on a card to display more details!
+      </p>
+      <div className="price-slider" data-aos="fade-up" data-aos-delay="200">
         <input
           type="range"
           min="0"
@@ -128,7 +143,13 @@ const PricingCarouselWithSlider = () => {
       {/* Main Slider */}
       <Slider {...settings} ref={sliderRef}>
         {plans.map((plan, index) => (
-          <div key={index} className="pricing-card" onClick={() => handleCardClick(plan)}>
+          <div
+            key={index}
+            className="pricing-card"
+            onClick={() => handleCardClick(plan)}
+            data-aos="zoom-in"
+            data-aos-delay={`${index * 100}`}
+          >
             <h3>{plan.title}</h3>
             <p className="price">Price: Rs {plan.price}</p>
             <ul>
@@ -145,7 +166,7 @@ const PricingCarouselWithSlider = () => {
 
       {/* Display Active Card Details */}
       {activeCard && (
-        <div ref={activeCardRef} key={animationKey} className="active-card animated-card">
+        <div ref={activeCardRef} key={animationKey} className="active-card animated-card" data-aos="fade-up">
           {activeCard.component}
         </div>
       )}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Pages/home';
 import Packages from './Pages/Packages';
@@ -9,21 +9,37 @@ import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Premium from './components/Premium';
-import { Login, Register } from './components/Auth'; // Updated path for Login and Register components
+import Auth from './components/Auth'; // Updated import for the Auth component
 import BallCursor from "./components/Cursor";
+import Backtotop from "./components/Backtotop";
+import { useCookies } from 'react-cookie';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Manage login state
+  const [cookies] = useCookies(['user']); // Get user data from cookies
 
   // Handle login logic
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
 
+  // Check if user is already logged in via cookies
+  useEffect(() => {
+    if (cookies.user) {
+      try {
+        JSON.parse(cookies.user); // Try parsing cookies
+        setIsLoggedIn(true); // If successful, mark as logged in
+      } catch (error) {
+        console.error("Error parsing cookies data:", error);
+      }
+    }
+  }, [cookies]);
+
   return (
     <Router>
       <div>
-        <BallCursor/>
+        <Backtotop />
+        <BallCursor />
         <TopBar />
         <Navbar />
         <Routes>
@@ -45,11 +61,7 @@ const App = () => {
           <Route path="/premium" element={<Premium />} />
           <Route
             path="/login"
-            element={<Login handleLogin={handleLogin} />}
-          />
-          <Route
-            path="/register"
-            element={<Register />}
+            element={<Auth handleLogin={handleLogin} />}
           />
         </Routes>
         <Footer />
