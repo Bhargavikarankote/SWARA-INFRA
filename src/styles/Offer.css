@@ -1,22 +1,20 @@
 .offer-section {
   text-align: center;
-  padding: 60px 80px;
+  padding: 20px 60px;
   position: relative;
-  /* background-image: url(file:///C:/Users/Dell-Pc/Pictures/Texture4.svg); */
+  background-image: url('../assets/Pricingbg.svg');
   background-size: cover;
   background-position: center;
 }
 
+.offer-section h2{
+  font-family: lilita one;
+  font-size: 40px;
+}
 .offer-title {
-  /* font-size: 2rem; */
+  font-size: 2rem;
   color: #4B0082;
   margin-bottom: 20px;
-
-  font-size: 40px;
-  font-weight: 400;
-  
-  margin: 0;
-  font-family: lilita one;
 }
 
 .offer-carousel .offer-member {
@@ -33,64 +31,6 @@
   transform: scale(1.05); 
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
   background-color: #f0f8ff; 
-}
-
-.slick-next,
-.slick-prev {
-  background-color: #3B0082; 
-  color: #fff; 
-  border: none; 
-  border-radius: 50%; 
-  width: 30px;
-  height: 30px; 
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  z-index: 1000; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease, transform 0.3s ease; 
-  position: absolute; 
-}
-
-.slick-next {
-  right: -40px; 
-  top: 50%; 
-  transform: translateY(-50%);
-}
-
-.slick-prev {
-  left: -40px; 
-  top: 50%; 
-  transform: translateY(-50%);
-}
-
-.slick-next:hover,
-.slick-prev:hover {
-  background-color: #555; 
-  transform: translateY(-50%) scale(1.1); 
-}
-
-.slick-next:before,
-.slick-prev:before {
-  content: '';
-}
-
-.slick-next::after,
-.slick-prev::after {
-  content: ''; 
-  border: solid white;
-  border-width: 0 2px 2px 0; 
-  display: inline-block;
-  padding: 5px;
-  transform: rotate(45deg);
-}
-
-.slick-next::after {
-  transform: rotate(-45deg); 
-}
-
-.slick-prev::after {
-  transform: rotate(135deg); 
 }
 
 .offer-member-image {
@@ -110,7 +50,7 @@
 }
 
 .offer-member-role {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: black; 
 }
 
@@ -124,7 +64,7 @@
 .facts-section {
   text-align: center;
   background-size: cover;
-  background-image: url('https://themes247.net/html5/construction-template/demo/assets/img/bg-section-2.jpg');    
+  background-image: url('../assets/Awesomebg.jpg');    
   color: white;
   background-repeat: no-repeat; 
   padding: 60px 0;
@@ -169,22 +109,140 @@
 }
 
 @media (max-width: 768px) {
-  .cards {
-      flex-direction: column;
-      align-items: center;
+  .offer-section h2{
+    font-size: 40px;
   }
-
-  .card1 {
-      width: 80%; 
-      margin-bottom: 20px;
-  }
-
   .facts {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .fact {
-      width: 80%; 
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .offer-carousel .offer-member {
+    margin: 10px 0;
+  }
+
+  .offer-title {
+    font-size: 1.8rem;
+  }
+
+  .offer-member-role {
+    font-size: 1.2rem;
+    color: black; 
+  }
+
+  .offer-member-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  .offer-section h2{
+    font-size: 30px;
+  }
+  .facts-section h2 {
+    font-size: 24px;
+  }
+
+  .facts-section h3 {
+    font-size: 18px;
+  }
+
+  .fact h4 {
+    font-size: 22px;
+  }
+
+  .offer-member-name {
+    font-size: 1.3rem;
+  }
+
+  .offer-member-role {
+    font-size: 1rem;
+  }
+
+  .offer-carousel .offer-member {
+    padding: 8px;
+  }
+
+  .offer-member-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 375px) {
+  .offer-section{
+    width: 90%;
+  }
+  .offer-section h2{
+    font-size: 25px;
+  }
+  .facts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fact {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .offer-section {
+    padding: 20px 10px;
+  }
+
+  .offer-title {
+    font-size: 1.6rem;
+  }
+
+  .offer-member-name {
+    font-size: 1.2rem;
+  }
+
+  .offer-member-role {
+    font-size: 0.9rem;
+  }
+
+  .offer-member-image {
+    height: 240px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer-section{
+    width: 90%;
+  }
+  .offer-section h2{
+    font-size: 20px;
+  }
+  .facts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fact {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .offer-title {
+    font-size: 1.4rem;
+  }
+
+  .offer-member-name {
+    font-size: 1rem;
+  }
+
+  .offer-member-role {
+    font-size: 0.9rem;
+  }
+
+  .offer-member-image {
+    height: 240px;
+    width: 100%;
   }
 }

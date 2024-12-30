@@ -1,6 +1,6 @@
 .featured-work {
   padding: 40px;
-  background-image: url('https://themes247.net/html5/construction-template/demo/assets/img/bg-section-1.jpg');
+  background-image: url('../assets/Footerbg.jpg');
   color: #ffffff;
   text-align: center;
 }
@@ -8,7 +8,8 @@
 .featured-work h2 {
   color: #FFBC13;
   margin-bottom: 20px;
-  
+  font-family: lilita one;
+  font-size: 40px;
 }
 
 .projects {
@@ -85,6 +86,9 @@
 }
 
 @media (max-width: 425px) {
+  .featured-work h2{
+    font-size: 30px;
+  }
   .projects {
     gap: 30px; 
     justify-content: center;
@@ -96,6 +100,9 @@
 }
 
 @media (max-width: 375px) {
+  .featured-work h2{
+    font-size: 25px;
+  }
   .projects {
     gap: 20px;
     justify-content: center;
@@ -107,6 +114,9 @@
 }
 
 @media (max-width: 320px) {
+  .featured-work h2{
+    font-size: 20px;
+  }
   .projects {
     gap: 15px; 
     justify-content: center;

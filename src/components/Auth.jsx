@@ -1,48 +1,40 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useCookies } from 'react-cookie';
-import '../styles/Auth.css'; // Shared CSS for authentication
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useCookies } from "react-cookie";
+import "../styles/Auth.css"; // Shared CSS for authentication
+import axios from "axios";
 
-const Auth = ({ handleLogin }) => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [cookies, setCookie] = useCookies(['user']);
+const SubscriptionForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [cookies, setCookie] = useCookies(["name", "email", "phone"]);
   const navigate = useNavigate();
 
-  // Check if user is already registered (stored in cookies)
-  useEffect(() => {
-    if (cookies.user) {
-      try {
-        const storedUser = JSON.parse(cookies.user);
-        setName(storedUser.name || '');
-        setEmail(storedUser.email || '');
-      } catch (error) {
-        console.error("Error parsing cookies data:", error);
-      }
-    }
-  }, [cookies]);
-
-  // Handle login (and registration, as we are using the same form for both)
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Save user data in cookies for next visit
-    const userData = { name, email, password };
+    setCookie("name", name, { path: "/", maxAge: 86400 });
+    setCookie("email", email, { path: "/", maxAge: 86400 });
+    setCookie("phone", phone, { path: "/", maxAge: 86400 });
+
+    const formData = { name, email, phone };
 
     try {
-      setCookie('user', JSON.stringify(userData), { path: '/' });
+      const response = await axios.post("http://localhost:8080/api/subscribe", formData, {
+        withCredentials: true,
+      });
+      alert("Subscription successful!");
+      navigate("/thank-you");
     } catch (error) {
-      console.error("Error setting cookies:", error);
+      console.error("Error:", error.response || error.message);
+      alert("Something went wrong. Please try again later.");
     }
-
-    handleLogin();
-    navigate('/');  // Redirect to home or any other page after login
   };
 
   return (
     <div className="unique-auth-container">
-      <h1 className="unique-auth-heading">Login / Register</h1>
+      <h1 className="unique-auth-heading">Subscribe</h1>
       <form className="unique-auth-form" onSubmit={handleSubmit}>
         <label className="unique-auth-label">Name:</label>
         <input
@@ -65,18 +57,19 @@ const Auth = ({ handleLogin }) => {
         <label className="unique-auth-label">Phone No:</label>
         <input
           className="unique-auth-input"
-          type="no"
+          type="tel"
+          pattern="[0-9]{10}"
           required
           placeholder="Enter your phone no"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
         />
         <button className="unique-auth-button" type="submit">
-          Login / Register
+          Subscribe
         </button>
       </form>
     </div>
   );
 };
 
-export default Auth;
+export default SubscriptionForm;

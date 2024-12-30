@@ -1,7 +1,7 @@
 import React from "react";
 // import "./App.css";
 import AboutUs from "../components/AboutUs";
-import ProgressBar from "../components/ProgressBar";
+// import ProgressBar from "../components/ProgressBar";
 import ServicesBanner from "../components/ServicesBanner";
 import TeamSection from "../components/TeamSection";
 // import PromoSection from "../components/Promosection";
@@ -13,7 +13,7 @@ function About() {
     <div className="App">
       {/* <TopBar/> */}
       <AboutUs/>
-      <ProgressBar/>
+      {/* <ProgressBar/> */}
       <ServicesBanner/>
       {/* <PromoSection/> */}
       <TeamSection/>

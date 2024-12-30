@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <nav className="custom-navbar">
       <div className="custom-social-links">
-        <a href="#" aria-label="Instagram">
+        <a href="https://www.instagram.com/swarainfra?igsh=MW5lNGRxOXNremNuZA==" aria-label="Instagram">
           <i className="fab fa-instagram"></i>
         </a>
         <a href="#" aria-label="Facebook">

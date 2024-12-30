@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
-import "../styles/CardSlider.css"; // Import the CSS for the slider
+import "../styles/CardSlider.css"; 
+
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS CSS
+import "aos/dist/aos.css"; 
 
 const CardSlider = () => {
   const cards = [
     {
       title: "1. Select any package",
-      icon: "📦", // Replace with actual icons/images
+      icon: "📦", 
     },
     {
       title: "2. Review & compare briefly",
@@ -23,12 +24,11 @@ const CardSlider = () => {
     },
   ];
 
-  // Initialize AOS when the component mounts
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      easing: "ease-in-out", // Easing function
-      once: true, // Animation happens only once
+      duration: 1000, 
+      easing: "ease-in-out", 
+      once: true, 
     });
   }, []);
 
@@ -42,7 +42,7 @@ const CardSlider = () => {
             key={index}
             className="slider-card"
             data-aos="zoom-in"
-            data-aos-delay={`${index * 200}`} // Delay for each card to appear in sequence
+            data-aos-delay={`${index * 200}`} 
           >
             <div className="card-icon" data-aos="fade-in">{card.icon}</div>
             <h3>{card.title}</h3>

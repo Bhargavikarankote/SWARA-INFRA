@@ -1,45 +1,45 @@
 .services-banner {
-    text-align: center;
-    background: url("https://themes247.net/html5/construction-template/demo/assets/img/bg-section-4.jpg") no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 40px 20px;
-    gap: 40px;
-    
-  }
+  text-align: center;
+  background: url('../assets/Progressbg.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 40px 20px;
+  gap: 40px;
   
-  .services {
-    display: flex;
-    flex-direction: column; /* Ensure progress bars are one below the other */
-    align-items: center; /* Center content */
-    gap: 20px; /* Add spacing between items */
+}
 
-    margin: 0;
+.services {
+  display: flex;
+  flex-direction: column; /* Ensure progress bars are one below the other */
+  align-items: center; /* Center content */
+  gap: 20px; /* Add spacing between items */
 
-    font-size: 30px;
-    font-weight: 400;
-    color: white;
-    margin: 0;
-    font-family: lilita one;
-  }
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  font-family: lilita one;
+}
+
+.service {
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 600px; /* Limit maximum width */
+  text-align: left;
   
-  .service {
-    width: 80%; /* Adjust width for responsiveness */
-    max-width: 600px; /* Limit maximum width */
-    text-align: left;
-    
-  }
-  
-  .service-text {
-    margin-bottom: 10px; 
-    /* font-size: 1.2em;
-    font-weight: bold; */
+}
 
-    margin: 0;
+.service-text {
+  margin-bottom: 10px; 
+  /* font-size: 1.2em;
+  font-weight: bold; */
 
-    font-size: 30px;
-    font-weight: 400;
-    color: white;
-    margin: 0;
-    font-family: lilita one;
-  }
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  font-family: lilita one;
+}

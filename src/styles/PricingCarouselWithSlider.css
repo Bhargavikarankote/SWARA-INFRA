@@ -6,7 +6,7 @@
   background: none;
   margin-top: 110px;
   position: relative;
-  background-image: url(https://www.supersonicplayground.com/wp-content/themes/supersonicplayground/img/backgrounds/blue-parallax-left-bottom.svg);
+  background-image: url('../assets/Pricingbg.svg');
   background-size: cover;
   background-position: center;
 }
@@ -170,6 +170,9 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .carousel-header{
+    font-size: 40px;
+  }
   .carousel-container {
     padding: 1rem;
     margin-top: 150px;
@@ -188,6 +191,9 @@
 }
 
 @media (max-width: 425px) {
+  .carousel-header{
+    font-size: 30px;
+  }
   .carousel-container {
     margin-top: 180px;
   }
@@ -212,6 +218,9 @@
 }
 
 @media (max-width: 375px) {
+  .carousel-header{
+    font-size: 25px;
+  }
   .pricing-card {
     width: 100%;
     margin: 10px auto;
@@ -233,6 +242,9 @@
 }
 
 @media (max-width: 320px) {
+  .carousel-header{
+    font-size: 20px;
+  }
   .pricing-card {
     width: 100%;
     margin: 10px auto;

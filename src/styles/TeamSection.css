@@ -2,7 +2,7 @@
   text-align: center;
   padding: 100px 80px;
   position: relative;
-  background-image: url(https://static.tildacdn.com/tild3762-3765-4036-b461-303332616630/Frame_2.svg);
+  background-image: url('../assets/Teambg.svg');
   background-size: cover;
   background-position: center;
 }
@@ -36,10 +36,6 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
   background-color: #f0f8ff; 
 }
-
-.slick-next{
-  background-color: #333;
-}
 .team-member-image {
   width: 100%;
   border-radius: 8px;
@@ -65,4 +61,28 @@ img {
   -moz-transform: none;
   transform: none;
   image-rendering: auto; 
+}
+
+@media(max-width:768px){
+  .team-title{
+    font-size: 40px;
+  }
+}
+
+@media(max-width:425px){
+  .team-title{
+    font-size: 30px;
+  }
+}
+
+@media(max-width:375px){
+  .team-title{
+    font-size: 25px;
+  }
+}
+
+@media(max-width:768px){
+  .team-title{
+    font-size: 20px;
+  }
 }

@@ -9,12 +9,12 @@ function ProgressBar({ progress }) {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setCurrentProgress(progress); // Fill the progress bar
+          setCurrentProgress(progress); 
         } else {
-          setCurrentProgress(0); // Reset when it's out of view
+          setCurrentProgress(0); 
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the progress bar is visible
+      { threshold: 0.5 } 
     );
 
     if (progressBarRef.current) {

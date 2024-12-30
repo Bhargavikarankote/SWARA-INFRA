@@ -8,25 +8,25 @@ const data = [
     image: "https://previews.123rf.com/images/kadmy/kadmy1506/kadmy150600519/41576316-construction-worker-mason-bricklayer-installing-red-brick-with-trowel-putty-knife-outdoors.jpg",
     title: "More Than Bricks and Mortar:",
     description:
-      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
+      "Why Home is a Feeling We all know the saying, Home is where the heart is. But what exactly does that mean? A house is a physical structure, made of bricks and mortar, wood and paint. But a home? A home transcends the physical. It's a feeling, an emotion that resonates deep within us.",
   },
   {
     image: "https://www.shutterstock.com/image-photo/structural-engineer-architect-foreman-worker-600nw-2462684023.jpg",
     title: "Comfort and Safety:",
     description:
-      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
+      "The Soul of Home The walls of our homes hold memories, both big and small. They echo with the sounds of birthday parties and holiday gatherings. They bear witness to life's milestones, the joys and sorrows we share with those closest to us. These memories become the soul of our home, a treasure trove of experiences that shape who we are. They create a sense of nostalgia, a longing for simpler times, and a reminder of the love that has filled this space.",
   },
   {
     image: "https://india.materialimmaterial.com/cdn/shop/products/07_5cde1e70-e2cb-4dd7-839c-3e70ab74faf2_1445x.jpg?v=1668784470",
     title: "Memories and Nostalgia:",
     description:
-      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
+      "The Soul of Home The walls of our homes hold memories, both big and small. They echo with the sounds of birthday parties and holiday gatherings. They bear witness to life's milestones, the joys and sorrows we share with those closest to us. These memories become the soul of our home, a treasure trove of experiences that shape who we are. They create a sense of nostalgia, a longing for simpler times, and a reminder of the love that has filled this space.",
   },
   {
     image: "https://img.freepik.com/free-photo/inspectors-with-sketch_1098-15451.jpg?semt=ais_hybrid",
     title: "Personalize and Expression:",
     description:
-      "Vestibulum eu libero volutpat, porta quam, tempus sem. Donec sodales quam id lorem lobortis.",
+      "The Spirit of Home Our homes are a reflection of ourselves, a canvas on which we express our unique personalities. Through the furniture we choose, the colors we paint the walls, the trinkets we collect on our travels, we imbue our homes with our spirit. These personal touches create a sense of ownership and pride, making our home a space that is truly our own. Home is a Journey, Not a Destination",
   },
 ];
 

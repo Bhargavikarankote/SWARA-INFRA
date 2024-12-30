@@ -9,7 +9,7 @@ import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Premium from './components/Premium';
-import Auth from './components/Auth'; // Updated import for the Auth component
+import Auth from './components/Auth'; 
 import BallCursor from "./components/Cursor";
 import Backtotop from "./components/Backtotop";
 import { useCookies } from 'react-cookie';

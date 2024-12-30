@@ -4,8 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  /* background: url('c:\Users\Dell-Pc\Downloads\Loginbg.jpg') no-repeat center center fixed;  */
-  /* Add background image */
+  background: url('../assets/Loginbg.jpg') no-repeat center center fixed;
   background-size: cover; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
