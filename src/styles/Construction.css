@@ -1,244 +1,160 @@
-/* Base Styles */
-* {
-  box-sizing: border-box;
-}
-
-.construction-container {
+.faq-container {
+  max-width: 600px;
+  margin: 20px auto;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  position: relative;
-  background-image: url(https://static.tildacdn.com/tild3762-3765-4036-b461-303332616630/Frame_2.svg);
-  background-size: cover;
-  background-position: center;
+  margin-left: 115px;
 }
 
-.sections-container {
+
+.faq-heading {
+  color: #4B0082;
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 24px;
+  font-family: 'Lilita One';
+  font-weight: 400;
+  margin-left: 0px;
+}
+
+.faq-list {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.faq-item {
+  border: 1px solid #ccc;
+  border-radius:18px;
+  overflow: hidden;
+  width: 1250px
+}
+
+
+.faq-question {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.why-choose-us {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: left;
-}
-
-.why-choose-us h2 {
-  color: #4B0082;
-  /* font-size: 28px; */
-  margin-bottom: 20px;
-  position: relative;
-
-  font-size: 40px;
-  font-weight: 400;
- 
-  margin: 0;
-  font-family: lilita one;
-}
-
-.why-choose-us h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: #4B0082;
-  margin-top: 5px;
-
-  font-size: 40px;
-  font-weight: 400;
-  
-  margin: 0;
-  font-family: lilita one;
-}
-
-.dropdown-header {
+  align-items: center;
+  padding: 8px;
   cursor: pointer;
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin: 5px 0;
-  padding: 15px 10px;
-  font-size: 16px;
+  background-color: #f9f9f9;
+  font-weight: 400;
   transition: background-color 0.3s ease;
-  text-align: left;
+  font-size: 24px;
+  font-family:Geologica;
+  
 }
 
-.dropdown-header.active,
-.dropdown-header:hover {
-  background-color: #ffc500;
-  color: white;
+.faq-question:hover {
+  background-color: #eee;
 }
 
-.dropdown-content.active {
-  display: block;
+
+.faq-answer {
+  padding: 15px;
+ font-weight: 100;
+  color: #555;
+  font-size: 22px;
+  font-family: Geologica;
+  line-height: 1.6;
+  background-color: #fff;
+  
+}
+ 
+
+ /* Responsive Styles */
+
+/* For screens 1024px and smaller */
+@media (max-width: 1024px) {
+.faq-container {
+  max-width: 90%;
+  margin: 20px auto;
+  margin-left: 0;
+}
+.faq-heading {
+  font-size: 28px;
+  margin-left: 10px;
+}
+.faq-item {
+  width: 100%;
+}
+.faq-question {
+  font-size: 22px;
+}
+.faq-answer {
+  font-size: 20px;
+}
 }
 
-.about-us {
-  flex: 1;
-  padding: 30px;
-  box-sizing: border-box;
+/* For screens 768px and smaller */
+@media (max-width: 768px) {
+.faq-heading {
+  font-size: 26px;
+  margin-left: 5px;
+}
+.faq-container {
+  max-width: 90%;
+  margin: 20px auto;
+  margin-left: 38px;
+}
+.faq-question {
+  font-size: 20px;
+}
+.faq-answer {
+  font-size: 18px;
+}
+}
+
+/* For screens 426px and smaller */
+@media (max-width: 426px) {
+.faq-container {
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+}
+.faq-heading {
+  font-size: 24px;
   text-align: center;
 }
-
-.about-us h2 {
-  color: #ffc500;
-  font-size: 28px;
-  margin-bottom: 20px;
-  position: relative;
-
-  
+.faq-list {
+  flex-direction: column; /* Stack items vertically */
+}
+.faq-item {
+  width: 100%;
+}
+.faq-question {
+  font-size: 18px;
+  padding: 10px;
+}
+.faq-answer {
+  font-size: 16px;
+  padding: 10px;
+}
 }
 
-.about-us h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: #ffc500;
-  margin: 5px auto;
+/* For screens 376px and smaller */
+@media (max-width: 376px) {
+.faq-heading {
+  font-size: 22px;
+}
+.faq-question {
+  font-size: 16px;
+}
+.faq-answer {
+  font-size: 14px;
+}
 }
 
-.image-gallery {
-  position: relative;
-}
-
-.main-image {
-  width: 100%; /* Makes it responsive to container width */
-  max-width: 600px; /* Caps the width for larger screens */
-  max-height: 300px;
-  border-radius: 8px;
-  object-fit: cover; /* Ensures proper scaling */
-  margin: 0 auto; /* Centers the image within its container */
-}
-
-.thumbnail-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.thumbnail-gallery img {
-  width: 140px;
-  height: 80px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.thumbnail-gallery img:hover {
-  transform: scale(1.1);
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .sections-container {
-    flex-direction: row;
-    gap: 20px;
-  }
-  .about-us h2,
-  .why-choose-us h2 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .sections-container {
-    flex-direction: row;
-    gap: 20px;
-  }
-  .why-choose-us {
-    padding: 15px;
-    text-align: center;
-  }
-  .why-choose-us h2 {
-    font-size: 24px;
-  }
-  .dropdown-header {
-    font-size: 18px;
-    padding: 10px;
-  }
-  .main-image {
-    max-width: 500px; /* Adjusts for tablet-sized screens */
-    max-height: 250px;
-  }
-  .thumbnail-gallery img {
-    width: 118px;
-    height: 70px;
-  }
-}
-
-@media (max-width: 425px) {
-  .why-choose-us,
-  .about-us {
-    padding: 15px;
-  }
-  .why-choose-us h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  .dropdown-header {
-    font-size: 14px;
-    padding: 8px;
-  }
-  .main-image {
-    max-width: 350px; 
-    max-height: 200px;
-  }
-  .thumbnail-gallery img {
-    width: 80px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 375px) {
-  .why-choose-us,
-  .about-us {
-    padding: 10px;
-  }
-  .why-choose-us h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .dropdown-header {
-    font-size: 10px;
-    padding: 8px;
-  }
-  .main-image {
-    max-width: 300px; /* Reduces further for very small screens */
-    max-height: 180px;
-  }
-  .thumbnail-gallery img {
-    width: 70px;
-    height: 50px;
-  }
-}
-
+/* For screens 320px and smaller */
 @media (max-width: 320px) {
-  .why-choose-us,
-  .about-us {
-    padding: 5px;
-  }
-  .why-choose-us h2,
-  .about-us h2 {
-    font-size: 18px;
-  }
-  .dropdown-header {
-    font-size: 10px;
-    padding: 5px;
-  }
-  .main-image {
-    max-width: 280px; 
-    max-height: 140px;
-  }
-  .thumbnail-gallery img {
-    width: 60px;
-    height: 40px;
-  }
+.faq-heading {
+  font-size: 20px;
+}
+.faq-question {
+  font-size: 14px;
+  padding: 8px;
+}
+.faq-answer {
+  font-size: 12px;
+  padding: 8px;
+}
 }

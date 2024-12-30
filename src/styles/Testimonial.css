@@ -3,9 +3,9 @@
   padding: 10px;
   color: #333;
   position: relative;
-  background-image: url(https://cdn.prod.website-files.com/61c1fed84b29a841427d2d59/66d73e2c1b8381ca608aa73c_case%20study%20shapes.svg);
+  /* background-image: url(file:///C:/Users/Dell-Pc/Pictures/Texture5.svg); */
   background-size: cover;
-  background-position: center;
+  background-position:center;
 }
 
 .content {
@@ -21,14 +21,8 @@
 
 .partners-section h2 {
   margin-bottom: 20px;
- 
+  font-size: 24px;
   color: #4B0082;
-
-  font-size: 40px;
-  font-weight: 400;
-  
-  margin: 0;
-  font-family: lilita one;
 }
 
 .partners-grid {
@@ -54,19 +48,13 @@
 .testimonials-section {
   flex: 1; 
   text-align: left;
-  margin-left: 80px; 
+  margin-left: 140px; 
 }
 
 .testimonials-section h2 {
   margin-bottom: 20px;
-  
+  font-size: 24px;
   color: #4B0082;
-
-  font-size: 40px;
-  font-weight: 400;
-  /* color: #455a64; */
-  margin: 0;
-  font-family: lilita one;
 }
 
 .testimonial-card {
