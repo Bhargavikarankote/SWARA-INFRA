@@ -60,10 +60,6 @@ gap: 10px;
   
 }
  
-
- /* Responsive Styles */
-
-/* For screens 1024px and smaller */
 @media (max-width: 1024px) {
 .faq-container {
   max-width: 90%;
@@ -85,7 +81,7 @@ gap: 10px;
 }
 }
 
-/* For screens 768px and smaller */
+
 @media (max-width: 768px) {
 .faq-heading {
   font-size: 26px;
@@ -104,7 +100,7 @@ gap: 10px;
 }
 }
 
-/* For screens 426px and smaller */
+
 @media (max-width: 426px) {
 .faq-container {
   max-width: 100%;
@@ -116,7 +112,7 @@ gap: 10px;
   text-align: center;
 }
 .faq-list {
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column; 
 }
 .faq-item {
   width: 100%;
@@ -131,7 +127,7 @@ gap: 10px;
 }
 }
 
-/* For screens 376px and smaller */
+
 @media (max-width: 376px) {
 .faq-heading {
   font-size: 22px;
@@ -144,7 +140,7 @@ gap: 10px;
 }
 }
 
-/* For screens 320px and smaller */
+
 @media (max-width: 320px) {
 .faq-heading {
   font-size: 20px;

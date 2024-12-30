@@ -9,7 +9,6 @@
     font-size: 40px;
     font-weight: 400;
     color: #4B0082;
-    /* margin: 0; */
     font-family: lilita one;
     
 }
@@ -114,7 +113,7 @@
   color: #fff;
   text-align: center;
   padding: 10px;
-  font-size: 18px; /* Increased font size */
+  font-size: 18px; 
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -152,12 +151,12 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 15px;
   }
 
   .project-card {
-    width: 100%; /* Cards take full available space in their grid column */
+    width: 100%; 
   }
 
   .project-image {

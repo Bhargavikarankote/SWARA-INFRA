@@ -29,7 +29,7 @@ const PricingCarouselWithSlider = () => {
       component: <PremiumPage />,
     },
     {
-      title: "Premium+",
+      title: "Premium +",
       price: 2399,
       buttonText: "Upgrade to Premium+",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
@@ -43,7 +43,7 @@ const PricingCarouselWithSlider = () => {
       component: <Luxury />,
     },
     {
-      title: "LuxuryPlus",
+      title: "Luxury +",
       price: 2799,
       buttonText: "Explore Luxury+",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
@@ -57,14 +57,14 @@ const PricingCarouselWithSlider = () => {
       component: <FreedomPage />,
     },
     {
-      title: "Freedomplus",
+      title: "Freedom +",
       price: 2650,
       buttonText: "Upgrade to Freedom+",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],
       component: <FreedomPlus />,
     },
     {
-      title: "TheOneplus",
+      title: "The One +",
       price: 3399,
       buttonText: "Experience The One+",
       features: ["Design and drawing", "Civil construction", "Architecture design", "Interior design"],

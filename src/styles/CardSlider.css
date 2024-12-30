@@ -1,7 +1,6 @@
 .slider-container {
   text-align: center;
   padding: 40px 20px;
-  /* margin-left: 50px; */
   position: relative;
     background-image: url('../assets/Cardsliderbg.png');
     background-size: cover;
@@ -10,10 +9,6 @@
 
 .slider-container h2 {
   margin-bottom: 10px;
-  /* font-size: 28px;
-  color: #333;
-  font-weight: 700; */
-
   font-size: 40px;
   font-weight: 400;
   color: #4B0082;
@@ -23,29 +18,31 @@
 
 .slider-container p {
   margin-bottom: 30px;
-  font-size: 16px;
+  color: #555;
+  font-size: 18px;
+  font-family:Geologica;
   color: #555;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 20px;
-  justify-items: center; /* Center the cards */
+  justify-items: center;
   padding: 10px;
 }
 
 .slider-card {
-  background: white; /* Changed to white */
-  border: 2px solid #4B0082; /* Border with the specified color */
+  background: white; 
+  border: 2px solid #4B0082;
   color: black;
   border-radius: 12px;
   padding: 25px 20px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 100%; /* Ensure cards maintain consistent width */
-  height: 200px; /* Fixed height for uniformity */
-  max-width: 300px; /* Limit card width */
+  width: 100%; 
+  height: 200px; 
+  max-width: 300px; 
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -71,26 +68,30 @@
   font-weight: 600;
   color: black;
   margin-bottom: 10px;
+  font-family:Geologica;
+  color: #555;
 }
 
 .slider-card p {
-  font-size: 14px;
   color: black;
   line-height: 1.6;
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .slider-container h2{
     font-size: 40px;
   }
   .card-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row on smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 15px;
   }
 
   .slider-card {
-    height: 280px; /* Adjust height for smaller screens */
+    height: 280px; 
   }
 }
 
@@ -99,11 +100,11 @@
     font-size: 30px;
   }
   .card-grid {
-    grid-template-columns: 1fr; /* One card per row on mobile screens */
+    grid-template-columns: 1fr; 
   }
 
   .slider-card {
-    height: 260px; /* Adjust height for mobile screens */
+    height: 260px; 
   }
 }
 

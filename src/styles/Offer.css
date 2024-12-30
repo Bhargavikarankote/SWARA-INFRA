@@ -105,7 +105,9 @@
 }
 
 .fact p {
-  font-size: 16px; 
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
 }
 
 @media (max-width: 768px) {

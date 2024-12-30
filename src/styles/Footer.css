@@ -1,5 +1,5 @@
 .footer {
-    background-image: url('../assets/Footerbg.jpg'); /* Replace with your background image URL */
+    background-image: url('../assets/Footerbg.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,8 +12,8 @@
   }
   
   .footer-column {
-    flex: 1; /* Each column takes up equal space */
-    max-width: 300px; /* Limits width for large screens */
+    flex: 1; 
+    max-width: 300px; 
   }
 
   .footer-column h1{
@@ -21,7 +21,7 @@
   }
   
   .footer-logo {
-    height: 60px; /* Adjust logo size */
+    height: 60px; 
     margin-bottom: 10px;
   }
   

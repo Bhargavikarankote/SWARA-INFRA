@@ -29,9 +29,12 @@
 }
 
 .left {
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.8;
   font-weight: bold;
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
 }
 
 .left img {
@@ -43,6 +46,9 @@
 .right {
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
 }
 
 .right input, .right textarea {
@@ -94,11 +100,11 @@
 
 .map-container {
   width: 100%;
-  height: 300px; /* Increased height */
+  height: 300px; 
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 20px; /* Ensure spacing between map and other elements */
-  box-sizing: border-box; /* Prevent overflow */
+  margin-bottom: 20px; 
+  box-sizing: border-box; 
 }
 
 .subject-dropdown {

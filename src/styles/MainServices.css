@@ -78,6 +78,8 @@
   font-size: 16px;
   color: #555;
   transition: color 0.3s ease; 
+  font-size: 18px;
+  font-family:Geologica;
 }
 
 .card4:hover .card4-text h3 {
@@ -92,6 +94,6 @@
   .card4-container {
     grid-template-columns: 1fr 1fr; 
     gap: 30px;
-    font-size: 20px;
+    font-size: 16px;
   }
 }

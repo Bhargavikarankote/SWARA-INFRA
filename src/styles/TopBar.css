@@ -13,14 +13,14 @@
   padding: 10px 20px;
   font-size: 0.928em;
   flex-wrap: wrap;
-  position: fixed; /* Makes it static at the top */
-  top: 0; /* Aligns it to the top of the viewport */
-  width: 100%; /* Ensures it spans the full width of the screen */
-  z-index: 1000; /* Places it above other elements */
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
 }
 
 .content {
-  margin-top: 50px; /* Adjust based on the height of your .top-bar */
+  margin-top: 50px; 
 }
 
 .social-links1 {
@@ -32,7 +32,7 @@
 
 .contact-info {
   display: flex;
-  gap: 20px; /* Space between contact items */
+  gap: 20px; 
   align-items: center;
   flex-wrap: wrap;
 }
@@ -40,7 +40,7 @@
 .contact-info span {
   display: flex;
   align-items: center;
-  gap: 5px; /* Space between icon and text */
+  gap: 5px; 
   white-space: nowrap;
 }
 
@@ -58,14 +58,14 @@
 
 @media (max-width: 768px) {
   .top-bar {
-    flex-direction: column; /* Stacks items vertically */
+    flex-direction: column; 
     text-align: center;
-    gap: 15px; /* Space between sections */
+    gap: 15px; 
   }
 
   .social-links {
     justify-content: center;
-    margin-bottom: 10px; /* Adds spacing below */
+    margin-bottom: 10px;
   }
 
   .contact-info {
@@ -76,8 +76,8 @@
 
 @media (max-width: 480px) {
   .top-bar {
-    padding: 10px; /* Reduced padding for smaller screens */
-    font-size: 0.8em; /* Reduced font size */
+    padding: 10px;
+    font-size: 0.8em;
   }
 
   .social-links {
@@ -86,7 +86,7 @@
   }
 
   .contact-info span {
-    flex-direction: column; /* Stacks text and icons vertically */
+    flex-direction: column; 
     text-align: center;
     gap: 5px;
   }

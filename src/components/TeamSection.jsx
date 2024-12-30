@@ -83,7 +83,7 @@ const TeamSection = () => {
 
   return (
     <section className="team-section">
-      <h2 className="team-title">MEET OUR TEAM</h2>
+      <h2 className="team-title">Meet Our Team</h2>
       <Slider {...settings} className="team-carousel">
         {teamMembers.map((member, index) => (
           <div

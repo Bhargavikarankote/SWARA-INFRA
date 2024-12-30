@@ -17,6 +17,8 @@
   margin-bottom: 1.5rem;
   color: #2c3e50; 
   text-align: center;
+  font-family:Geologica;
+  color: #555;
 }
 
 .unique-auth-form {
@@ -33,8 +35,10 @@
   display: block;
   margin-bottom: 0.5rem;
   color: #34495e; 
-  font-size: 0.9rem;
   font-weight: 600;
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
 }
 
 .unique-auth-input {
@@ -43,9 +47,11 @@
   margin-bottom: 1.2rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
   box-sizing: border-box;
   transition: border 0.3s ease;
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
 }
 
 .unique-auth-input:focus {
@@ -59,12 +65,14 @@
   color: #ffffff;
   border: none;
   padding: 0.8rem;
-  font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
 }
 
 .unique-auth-button:hover {
