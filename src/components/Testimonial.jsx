@@ -8,23 +8,23 @@ const PartnersTestimonials = () => {
 
   const testimonials = [
     {
-      text: "This is a great company to work with. Their service is outstanding!",
+      text: "This is a great company to work with!",
       author: "Jane Doe",
-      position: "CEO, Example Corp",
+      position: "CEO",
       image: "https://themes247.net/html5/construction-template/demo/assets/img/testimonials/3.jpg",
       rating: "⭐⭐⭐⭐⭐",
     },
     {
-      text: "Excellent quality and great customer support. Highly recommended!",
+      text: "Excellent quality and great support!",
       author: "John Smith",
-      position: "Manager, ABC Ltd",
+      position: "Manager",
       image: "https://themes247.net/html5/construction-template/demo/assets/img/testimonials/2.jpg",
       rating: "⭐⭐⭐⭐",
     },
     {
-      text: "Professional and reliable services. Great experience overall.",
-      author: "Emily Clark",
-      position: "Director, Tech Solutions",
+      text: "Professional and reliable services.",
+      author: "Clark",
+      position: "Director",
       image: "https://themes247.net/html5/construction-template/demo/assets/img/testimonials/1.jpg",
       rating: "⭐⭐⭐⭐⭐",
     },

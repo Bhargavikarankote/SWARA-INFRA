@@ -25,8 +25,8 @@ function Navbar() {
         <a href="#" aria-label="Twitter">
           <i className="fab fa-twitter"></i>
         </a>
-        <a href="#" aria-label="LinkedIn">
-          <i className="fab fa-linkedin"></i>
+        <a href="https://wa.me/8217563914" aria-label="WhatsApp">
+          <i className="fab fa-whatsapp"></i>
         </a>
         <a href="#" aria-label="YouTube">
           <i className="fab fa-youtube"></i>

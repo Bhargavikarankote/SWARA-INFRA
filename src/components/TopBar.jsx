@@ -10,7 +10,7 @@ const TopBar = () => {
         <img src="https://swarainfra.homes/static/media/logo.b9aec6b0bfc6345fdc2e.png" alt="Swara Infra Logo" className="logo" alt="Swara Infra Logo"
           className="navbar-logo"   />
       </Link>
-       <div className="logo-text">Swara Infra</div>
+      <div className="logo-text">Swara Infra</div>
           
           </div>
         <div className="contact-info">

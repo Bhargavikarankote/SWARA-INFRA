@@ -16,12 +16,12 @@
 
   .partners-section {
     flex: 1; 
-    text-align: left;
+    text-align: center;
   }
 
   .partners-section h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 40px;
     color: #4B0082;
   }
 
@@ -48,13 +48,14 @@
   .testimonials-section {
     flex: 1; 
     text-align: left;
-    margin-left: 140px; 
+    margin-left: 160px; 
   }
 
   .testimonials-section h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 40px;
     color: #4B0082;
+    text-align: center;
   }
 
   .testimonial-card {
@@ -125,7 +126,11 @@
   @media (max-width: 768px) {
     .content {
       flex-direction: column; 
-      margin-left: 0; 
+      margin-left: 30px; 
+    }
+
+    .partners-section h2{
+      font-size: 30px;
     }
 
     .testimonials-section {
@@ -137,16 +142,22 @@
       width: 100%; 
       height: auto; 
     }
+
+    .partners-section h2{
+      font-size: 30px;
+    }
   }
 
   @media (max-width: 425px) {
     .testimonial-card {
       width: 100%;
       padding: 15px; 
+      margin-left: 20px;
     }
 
     .testimonials-section h2 {
-      font-size: 20px; 
+      text-align: center;
+      font-size: 25px; 
     }
 
     .testimonial-author h4 {
@@ -166,15 +177,22 @@
       font-size: 14px;
       margin: 5px;
     }
+
+    .partners-section h2{
+      font-size: 25px;
+    }
   }
 
   @media (max-width: 375px) {
     .testimonial-card {
       padding: 10px; 
+      margin-left: 25px;
+      width:250px
     }
 
     .testimonials-section h2 {
-      font-size: 18px; 
+      font-size: 25px; 
+      text-align: center;
     }
 
     .testimonial-author h4 {
@@ -194,15 +212,21 @@
       font-size: 12px;
       margin: 3px;
     }
+
+    .partners-section h2{
+      font-size: 25px;
+    }
   }
 
   @media (max-width: 320px) {
     .testimonial-card {
       padding: 8px; 
+      margin-left: 10px;
     }
 
     .testimonials-section h2 {
-      font-size: 16px; 
+      font-size: 20px;
+      text-align: center; 
     }
 
     .testimonial-author h4 {
@@ -221,5 +245,9 @@
       padding: 4px 8px; 
       font-size: 10px;
       margin: 2px;
+    }
+
+    .partners-section h2{
+      font-size: 20px;
     }
   }

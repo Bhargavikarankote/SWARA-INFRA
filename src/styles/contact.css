@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-top: 90px;
+  margin-top: 100px;
   position: relative;
     background-image: url('../assets/Contactbg.png');
     background-size: cover;
@@ -85,7 +85,7 @@
     justify-content: center;
     padding: 20px;
     background-color: #f9f9f9;
-    margin-top: 140px;
+    margin-top: 150px;
   }
   
   .content {
@@ -129,3 +129,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
+
+@media (max-width: 425px) {
+  .contact-container {
+    margin-top: 200px;
+  }
+}
+
+  @media (max-width: 375px) {
+    .contact-container {
+      margin-top: 1650px;
+    }
+    }
+    @media (max-width: 320px) {
+      .contact-container {
+        margin-top: 180px;
+      }
+
+    }

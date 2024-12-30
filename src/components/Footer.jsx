@@ -9,7 +9,7 @@ const Footer = () => {
         <img src="https://swarainfra.homes/static/media/logo.b9aec6b0bfc6345fdc2e.png" alt="Swara Infra Logo" className="footer-logo" /></a>
         <h1>Swara Infra</h1>
         <div className="social-links2">
-          <a href="#" aria-label="Instagram">
+          <a href="https://www.instagram.com/swarainfra" aria-label="Instagram">
             <i className="fab fa-instagram"></i>
           </a>
           <a href="#" aria-label="Facebook">
@@ -18,9 +18,10 @@ const Footer = () => {
           <a href="#" aria-label="Twitter">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="#" aria-label="LinkedIn">
-            <i className="fab fa-linkedin"></i>
-          </a>
+          <a href="https://wa.me/8217563914" aria-label="WhatsApp">
+  <i className="fab fa-whatsapp"></i>
+</a>
+
           <a href="#" aria-label="YouTube">
             <i className="fab fa-youtube"></i>
           </a>

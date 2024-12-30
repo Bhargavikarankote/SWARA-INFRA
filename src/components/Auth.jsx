@@ -35,6 +35,7 @@ const SubscriptionForm = () => {
   return (
     <div className="unique-auth-container">
       <h1 className="unique-auth-heading">Subscribe</h1>
+      
       <form className="unique-auth-form" onSubmit={handleSubmit}>
         <label className="unique-auth-label">Name:</label>
         <input
