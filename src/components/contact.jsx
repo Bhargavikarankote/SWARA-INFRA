@@ -64,7 +64,7 @@ const Contact = () => {
       </div>
 
       <div className="content">
-        {/* Left Section */}
+        
         <div className="left">
           <p><strong>Call Us</strong></p>
           <p>
@@ -90,7 +90,7 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* Right Section */}
+     
         <div className="right">
           <p><strong>Get In Touch</strong></p>
           <form onSubmit={handleSubmit}>
@@ -118,7 +118,7 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
-            {/* Dropdown for Subject */}
+           
             <select
               name="subject"
               className="subject-dropdown"

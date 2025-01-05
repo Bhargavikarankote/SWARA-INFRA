@@ -58,7 +58,7 @@ const App = () => {
         </div>
       </div>
 
-      {/* Cards Section */}
+      
       <div className="container1">
         {cards.map((card, index) => (
           <div className="card-wrapper" key={card.id}>

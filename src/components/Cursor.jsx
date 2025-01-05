@@ -1,6 +1,6 @@
-// components/BallCursor/BallCursor.jsx
+
 import React, { useEffect, useState } from "react";
-import "../styles/Cursor.css"; // Import the styling for the cursor
+import "../styles/Cursor.css"; 
 
 const BallCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -10,10 +10,10 @@ const BallCursor = () => {
       setPosition({ x: event.clientX, y: event.clientY });
     };
 
-    // Add event listener to track the mouse movement
+    
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Cleanup the event listener on component unmount
+   
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };

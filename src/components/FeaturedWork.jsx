@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import '../styles/FeaturedWork.css';  // Assuming your CSS is in FeaturedWork.css
+import '../styles/FeaturedWork.css';  
 import AOS from 'aos';
-import 'aos/dist/aos.css';  // Import AOS CSS
+import 'aos/dist/aos.css';  
 
 const ProjectCard = ({ imgSrc, title, description, buildingName }) => {
   return (
@@ -11,7 +11,7 @@ const ProjectCard = ({ imgSrc, title, description, buildingName }) => {
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <div className="building-name">{buildingName}</div> {/* Building name on hover */}
+      <div className="building-name">{buildingName}</div> 
     </div>
   );
 };
@@ -19,9 +19,9 @@ const ProjectCard = ({ imgSrc, title, description, buildingName }) => {
 const FeaturedWork = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      easing: 'ease-in-out', // Easing function
-      once: true, // Animation happens once
+      duration: 1000, 
+      easing: 'ease-in-out', 
+      once: true, 
     });
   }, []);
 

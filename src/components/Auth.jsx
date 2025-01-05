@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
-import "../styles/Auth.css"; // Shared CSS for authentication
+import "../styles/Auth.css"; 
 import axios from "axios";
 
 const SubscriptionForm = () => {

@@ -29,7 +29,7 @@ const Dropdown = ({ activeIndex }) => {
         "Ledge wall for incorporating concealed sanitary parts – Included",
       ],
     },
-    // Add other plans as required
+  
   ];
 
   return (
@@ -37,13 +37,13 @@ const Dropdown = ({ activeIndex }) => {
       <div className="dropdown-menu">
         {menuItems.map((item, index) => (
           <div key={index} className="dropdown-item">
-            {/* Title */}
+           
             <div
               className={`dropdown-title ${activeIndex === index ? "active" : ""}`}
             >
               {item.title}
             </div>
-            {/* Content */}
+            
             {activeIndex === index && (
               <div className="dropdown-content">
                 <ul>
