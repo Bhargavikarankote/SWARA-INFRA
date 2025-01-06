@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../styles/Accordion.css";
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const itemRefs = useRef([]); // To store refs for each accordion item
 
   const toggleAccordion = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
+
+  useEffect(() => {
+    if (activeIndex !== null && itemRefs.current[activeIndex]) {
+      itemRefs.current[activeIndex].scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [activeIndex]);
 
   const menuitems = [
     {
@@ -231,36 +241,37 @@ const Accordion = () => {
   ];
   return (
     <div className="accordion-container">
-      {/* Add Heading at the Top */}
-      <h1 className="accordion-heading">Our Oneplus Services</h1>
-    <div className="accordion">
-      {menuitems.map((item, index) => (
-        <div key={index} className="accordion-item">
+      <h1 className="accordion-heading">Our Premium Services</h1>
+      <div className="accordion">
+        {menuitems.map((item, index) => (
           <div
-            className={`accordion-title ${
-              activeIndex === index ? "active" : ""
-            }`}
-            onClick={() => toggleAccordion(index)}
+            key={index}
+            className="accordion-item"
+            ref={(el) => (itemRefs.current[index] = el)}
           >
-            <span>{item.title}</span>
-            <span>{activeIndex === index ? "-" : "+"}</span>
-          </div>
-          {activeIndex === index && (
-            <div className="accordion-content">
-             {Array.isArray(item.content)?(
-              <ul>
-                {item.content.map((subItem,subIndex)=>(
-                  <li key={subIndex}>{subItem}</li>
-                ))}
-              </ul>
-             ):(
-              <p>{item.content}</p>
-             )}
+            <div
+              className={`accordion-title ${activeIndex === index ? "active" : ""}`}
+              onClick={() => toggleAccordion(index)}
+            >
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
-          )}
-        </div>
-      ))}
-    </div>
+            {activeIndex === index && (
+              <div className="accordion-content">
+                {Array.isArray(item.content) ? (
+                  <ul>
+                    {item.content.map((subItem, subIndex) => (
+                      <li key={subIndex}>{subItem}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{item.content}</p>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
