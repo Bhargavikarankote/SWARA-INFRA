@@ -12,6 +12,7 @@ import Premium from './components/Premium';
 import Auth from './components/Auth'; 
 import BallCursor from "./components/Cursor";
 import Backtotop from "./components/Backtotop";
+import WhatsAppButton from './components/Whattsapp';
 import { useCookies } from 'react-cookie';
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
   return (
     <Router>
       <div>
+      <WhatsAppButton/>
         <Backtotop />
         <BallCursor />
         <TopBar />

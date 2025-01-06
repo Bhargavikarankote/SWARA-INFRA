@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Footer.css"; 
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -30,18 +32,26 @@ const Footer = () => {
       <div className="footer-column">
         <h4>Links</h4>
         <ul>
-          <li>
-            <a href="/AboutUs">About Us</a>
-          </li>
-          <li>
-            <a href="/Projects">Construction</a>
-          </li>
-          <li>
-            <a href="/contact">Contact Us</a>
-          </li>
-          <li>
-            <a href="/packages">Packages</a>
-          </li>
+                  <li>
+                    <Link to="/about" >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" >
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/projects" >
+                      Projects
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/packages" >
+                      Packages
+                    </Link>
+                  </li>
         </ul>
         <p>© 2024 Swara Infra, Inc. All Rights Reserved</p>
       </div>
