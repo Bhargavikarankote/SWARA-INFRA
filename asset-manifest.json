@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/SWARA-INFRA/static/css/main.d3b60243.css",
-    "main.js": "/SWARA-INFRA/static/js/main.fe32e664.js",
+    "main.css": "/SWARA-INFRA/static/css/main.ce018ed4.css",
+    "main.js": "/SWARA-INFRA/static/js/main.34705a61.js",
     "static/js/453.0aefb1aa.chunk.js": "/SWARA-INFRA/static/js/453.0aefb1aa.chunk.js",
     "static/media/Loginbg.jpg": "/SWARA-INFRA/static/media/Loginbg.5c2b6335b53b6933695d.jpg",
     "static/media/mission.jpg": "/SWARA-INFRA/static/media/mission.87b6083ff3199f2ff435.jpg",
     "static/media/featuring.jpg": "/SWARA-INFRA/static/media/featuring.a3b9a1333aac25a9b471.jpg",
     "static/media/vision.jpg": "/SWARA-INFRA/static/media/vision.02ea449980cd367b9901.jpg",
     "static/media/Footerbg.jpg": "/SWARA-INFRA/static/media/Footerbg.3fb3e3dad1d2cb8fbc2b.jpg",
+    "static/media/whatsappicon.png": "/SWARA-INFRA/static/media/whatsappicon.7f7ef9cde8a3f6ef7a55.png",
     "static/media/bootstrap-icons.woff?": "/SWARA-INFRA/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/SWARA-INFRA/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/Progressbg.jpg": "/SWARA-INFRA/static/media/Progressbg.aa33ea6749976ef64b14.jpg",
@@ -23,12 +24,12 @@
     "static/media/slick.woff": "/SWARA-INFRA/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/SWARA-INFRA/index.html",
     "static/media/Pricingbg.svg": "/SWARA-INFRA/static/media/Pricingbg.4da88fc88e616b3da18c.svg",
-    "main.d3b60243.css.map": "/SWARA-INFRA/static/css/main.d3b60243.css.map",
-    "main.fe32e664.js.map": "/SWARA-INFRA/static/js/main.fe32e664.js.map",
+    "main.ce018ed4.css.map": "/SWARA-INFRA/static/css/main.ce018ed4.css.map",
+    "main.34705a61.js.map": "/SWARA-INFRA/static/js/main.34705a61.js.map",
     "453.0aefb1aa.chunk.js.map": "/SWARA-INFRA/static/js/453.0aefb1aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3b60243.css",
-    "static/js/main.fe32e664.js"
+    "static/css/main.ce018ed4.css",
+    "static/js/main.34705a61.js"
   ]
 }
