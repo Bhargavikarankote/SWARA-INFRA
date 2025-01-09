@@ -30,6 +30,7 @@
   max-width: 800px;
   margin: 0 auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  font-family: Arial, sans-serif;
 }
 
 .card4:hover {
@@ -79,7 +80,7 @@
   color: #555;
   transition: color 0.3s ease; 
   font-size: 18px;
-  font-family:Geologica;
+  font-family: Arial, sans-serif;
 }
 
 .card4:hover .card4-text h3 {

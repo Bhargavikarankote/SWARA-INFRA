@@ -45,11 +45,13 @@
   font-size: 1rem;
   color: #333; 
   margin: 5px 0;
+  font-family: Arial, sans-serif;
 }
 
 .team-member-role {
   font-size: 0.9rem;
   color: #555; 
+  font-family: Arial, sans-serif;
 }
 
 img {

@@ -15,6 +15,7 @@
   font-size: 2rem;
   color: #4B0082;
   margin-bottom: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .offer-carousel .offer-member {
@@ -47,11 +48,13 @@
   font-size: 1.5rem;
   color: #3B0082; 
   margin: 5px 0;
+  font-family: Arial, sans-serif;
 }
 
 .offer-member-role {
-  font-size: 1.2rem;
+  font-weight: 16px;
   color: black; 
+  font-family: Arial, sans-serif;
 }
 
 
