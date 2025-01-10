@@ -40,13 +40,13 @@ const App = () => {
 
   return (
     <>
-      {/* Header Section */}
+    
       <div
         className="header"
         style={{
           backgroundImage: `url(${headerBg})`,
         }}
-        data-aos="fade-up"  // Add animation effect for header
+        data-aos="fade-up"  
       >
         <div className="header-content">
           <h1>About Us</h1>

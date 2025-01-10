@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../styles/contact.css"; // Import the styling for the contact section
+import "../styles/contact.css"; 
 
 const Contact = () => {
-  // State for form inputs
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,20 +11,20 @@ const Contact = () => {
     message: "",
   });
 
-  // State for feedback messages
+  
   const [responseMessage, setResponseMessage] = useState("");
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Handle form submission
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Create a FormData object to send data as form-data
+    
     const formDataObj = new FormData();
     for (const key in formData) {
       formDataObj.append(key, formData[key]);
@@ -33,13 +33,13 @@ const Contact = () => {
     try {
       const response = await fetch("http://localhost:8080/swarainfra/contact/submit", {
         method: "POST",
-        body: formDataObj, // Send FormData
+        body: formDataObj, 
       });
 
       if (response.ok) {
         const data = await response.json();
         setResponseMessage("Message sent successfully!");
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" }); // Reset form
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" }); 
       } else {
         setResponseMessage("Failed to send message. Please try again.");
       }

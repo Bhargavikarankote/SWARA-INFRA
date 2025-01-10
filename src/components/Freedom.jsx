@@ -3,7 +3,7 @@ import "../styles/Accordion.css";
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-  const itemRefs = useRef([]); // To store refs for each accordion item
+  const itemRefs = useRef([]); 
 
   const toggleAccordion = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
