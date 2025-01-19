@@ -4,21 +4,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS CSS
+import 'aos/dist/aos.css'; 
 
 function HeroSection() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      easing: 'ease-in-out', // Easing function
-      once: true, // Animation happens once
+      duration: 1000, 
+      easing: 'ease-in-out', 
+      once: true, 
     });
   }, []);
 
   return (
     <div className="hero-section">
       <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel">
-        {/* Carousel Indicators */}
+       
         <div className="carousel-indicators">
           <button
             type="button"
@@ -42,7 +42,7 @@ function HeroSection() {
           ></button>
         </div>
 
-        {/* Carousel Items */}
+       
         <div className="carousel-inner">
           <div className="carousel-item active" data-aos="fade-up">
             <img
@@ -79,7 +79,7 @@ function HeroSection() {
           </div>
         </div>
 
-        {/* Carousel Controls */}
+        
         <button
           className="carousel-control-prev"
           type="button"
