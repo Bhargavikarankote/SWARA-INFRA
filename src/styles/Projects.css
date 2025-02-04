@@ -46,6 +46,7 @@
 
 .project-card {
   width: 300px;
+  
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
@@ -61,6 +62,7 @@
 
 .project-image {
   width: 200%;
+  height: 1000px;
   height: 250px;
   object-fit: cover;
 }
@@ -94,7 +96,8 @@
 }
 
 .project-image {
-  width: 200%;
+  /* width: 200%; */
+  width: 270px;
   height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease;

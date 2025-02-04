@@ -85,7 +85,8 @@ import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Premium from './components/Premium';
-import Auth from './components/Auth'; 
+// import Auth from './components/Auth'; 
+import {Login,Register} from './components/Auth';
 import BallCursor from "./components/Cursor";
 import Backtotop from "./components/Backtotop";
 import WhatsAppButton from './components/Whattsapp';
@@ -149,9 +150,17 @@ const App = () => {
             }
           />
           <Route path="/premium" element={<Premium />} />
-          <Route
+          {/* <Route
             path="/login"
             element={<Auth handleLogin={handleLogin} />}
+          /> */}
+          <Route
+            path="/login"
+            element={<Login handleLogin={handleLogin} />}
+          />
+          <Route
+            path="/register"
+            element={<Register />}
           />
         </Routes>
         <Footer />
