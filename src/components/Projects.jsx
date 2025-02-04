@@ -146,15 +146,12 @@ const Projects = () => {
   const [images, setImages] = useState([]);
   const [status, setStatus] = useState('Completed'); // Default status is 'Completed'
   const [selectedImage, setSelectedImage] = useState(null);
-  const [loading, setLoading] = useState(false);
 
   // Fetch images when component mounts or status changes
   useEffect(() => {
     const fetchImages = async () => {
-      setLoading(true);
       const data = await getImagesByStatus(status);
       setImages(data);
-      setLoading(false);
     };
 
     fetchImages();
@@ -190,31 +187,25 @@ const Projects = () => {
         </button>
       </div>
 
-   
-
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        <div className="projects-grid">
-          {images && images.length > 0 ? (
-            images.map((image) => (
-              <div key={image.id} className="project-card">
-                <img
-                  src={`http://localhost:5000${image.url}`}
-                  alt={image.location}
-                  className="project-image"
-                />
-                <div className="project-details">
-                  <p>{image.location}</p>
-                  <p>{image.square_feet} sq.ft</p>
-                </div>
+      <div className="projects-grid">
+        {images && images.length > 0 ? (
+          images.map((image) => (
+            <div key={image.id} className="project-card">
+              <img
+                src={`http://localhost:5000${image.url}`}
+                alt={image.location}
+                className="project-image"
+              />
+              <div className="project-details">
+                <p>{image.location}</p>
+                <p>{image.square_feet} sq.ft</p>
               </div>
-            ))
-          ) : (
-            <div>No images found</div>
-          )}
-        </div>
-      )}
+            </div>
+          ))
+        ) : (
+          <div>No images found</div>
+        )}
+      </div>
     </div>
   );
 };
