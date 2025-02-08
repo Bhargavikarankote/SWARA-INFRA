@@ -54,7 +54,9 @@ const Projects = () => {
           images.map((image) => (
             <div key={image.id} className="project-card">
               <img
-                src={`http://localhost:5001${image.url}`}
+                // src={`http://localhost:5001${image.url}`}
+                src={`https://swara-infra-backend.onrender.com${image.url}`}
+
                 alt={image.location}
                 className="project-image"
               />

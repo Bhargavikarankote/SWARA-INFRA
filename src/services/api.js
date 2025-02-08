@@ -1,6 +1,4 @@
 
-
-
 // import axios from 'axios';
 
 // // Use Flask backend running on port 5001
@@ -56,10 +54,24 @@
 //   }
 // };
 
+// // Contact form submission API
+// export const submitContactForm = async (contactData) => {
+//   try {
+//     const response = await axios.post(`${API_URL}/contact`, contactData, {
+//       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+//     });
+//     return { success: true, data: response.data };
+//   } catch (error) {
+//     console.error('Contact form submission error:', error.response?.data || error.message);
+//     return { success: false, error: error.response?.data?.message || 'Contact form submission failed' };
+//   }
+// };
+
+
 import axios from 'axios';
 
-// Use Flask backend running on port 5001
-const API_URL = 'http://localhost:5001';
+// Use the deployed Flask backend URL on Render
+const API_URL = 'https://swara-infra-backend.onrender.com';
 
 // Fetch images based on status (Completed or Ongoing)
 export const getImagesByStatus = async (status) => {
